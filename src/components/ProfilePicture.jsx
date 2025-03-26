@@ -5,7 +5,7 @@ export const ProfilePicture = () => {
     <section className={app.profileContainer}>
       <img
         className={app.profileImage}
-        src="src/assets/photos/graduation-degree.jpg"
+        src="/src/assets/photos/graduation-degree.jpg"
         alt="Profile picture"
       />
     </section>
