@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { NavLink } from "react-router";
 import { LanguageContext } from "../context/LanguageContext";
 
-import en from "/public/translations/en.json";
-import es from "/public/translations/es.json";
+import en from "/src/translations/en.json";
+import es from "/src/translations/es.json";
 
 import app from "../styles/App.module.css";
 import "../styles/App.module.css";
@@ -20,7 +20,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/aleroses.github.io"
+        to="/"
       >
         {newLang.navbar.aboutMe}
       </NavLink>
@@ -30,7 +30,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/aleroses.github.io/skills"
+        to="/skills"
       >
         {newLang.navbar.skills}
       </NavLink>
@@ -40,7 +40,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/aleroses.github.io/labs"
+        to="/labs"
       >
         {newLang.navbar.labs}
       </NavLink>

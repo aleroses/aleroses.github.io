@@ -4,8 +4,8 @@ import { useContext } from "react";
 
 import { LanguageContext } from "../context/LanguageContext";
 
-import en from "/public/translations/en.json";
-import es from "/public/translations/es.json";
+import en from "/src/translations/en.json";
+import es from "/src/translations/es.json";
 
 import app from "../styles/App.module.css";
 

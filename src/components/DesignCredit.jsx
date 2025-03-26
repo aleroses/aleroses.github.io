@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import app from "../styles/App.module.css";
 import { LanguageContext } from "../context/LanguageContext";
-import en from "/public/translations/en.json";
-import es from "/public/translations/es.json";
+import en from "/src/translations/en.json";
+import es from "/src/translations/es.json";
 
 export const DesignCredit = () => {
   const { language } = useContext(LanguageContext);

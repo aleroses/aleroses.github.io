@@ -4,8 +4,8 @@ import { LanguageContext } from "../context/LanguageContext";
 import { useAnimatedIcons } from "../hooks/useAnimatedIcons";
 
 import { skills } from "../data/skills";
-import en from "/public/translations/en.json";
-import es from "/public/translations/es.json";
+import en from "/src/translations/en.json";
+import es from "/src/translations/es.json";
 
 import app from "../styles/App.module.css";
 import "../styles/reactIcons.css";
