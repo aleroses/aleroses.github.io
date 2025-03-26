@@ -7,8 +7,9 @@ export default defineConfig(({ mode }) => ({
   // const env = loadEnv(mode, process.cwd(), "");
 
   plugins: [react()],
-  base:
-    mode === "production" ? "/aleroses.github.io/" : "/",
+  // base:
+  //   mode === "production" ? "/aleroses.github.io/" : "/",
+  base: "/",
   server: {
     open: true,
   },
