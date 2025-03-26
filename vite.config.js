@@ -26,4 +26,15 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     extensions: [".js", ".jsx", ".json"],
   },
+
+  build: {
+    outDir: "dist",
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`,
+      },
+    },
+  },
 }));
