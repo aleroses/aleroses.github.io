@@ -6,10 +6,14 @@ export default defineConfig(({ mode }) => ({
   // Cargar variables de entorno según el modo (dev/prod)
   // const env = loadEnv(mode, process.cwd(), "");
 
-  // plugins: [react()],
-  // base: "/aleroses.github.io/",
+  plugins: [react()],
+  base:
+    mode === "production" ? "/aleroses.github.io/" : "/", // ✔️ Solo aplica base en prod
+  server: {
+    open: true, // Abre automáticamente el navegador en http://localhost:5173
+  },
 
-  /* esbuild: {
+  esbuild: {
     loader: "jsx",
   },
   optimizeDeps: {
@@ -21,11 +25,5 @@ export default defineConfig(({ mode }) => ({
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"],
-  }, */
-  plugins: [react()],
-  base:
-    mode === "production" ? "/aleroses.github.io/" : "/", // ✔️ Solo aplica base en prod
-  server: {
-    open: true, // Abre automáticamente el navegador en http://localhost:5173
   },
 }));
