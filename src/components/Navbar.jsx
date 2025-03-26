@@ -20,7 +20,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/"
+        to="/aleroses.github.io"
       >
         {newLang.navbar.aboutMe}
       </NavLink>
@@ -30,7 +30,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/skills"
+        to="/aleroses.github.io/skills"
       >
         {newLang.navbar.skills}
       </NavLink>
@@ -40,7 +40,7 @@ export const Navbar = () => {
             ? `${app.active} ${app.navbarContainerNavLink}`
             : app.navbarContainerNavLink;
         }}
-        to="/labs"
+        to="/aleroses.github.io/labs"
       >
         {newLang.navbar.labs}
       </NavLink>
