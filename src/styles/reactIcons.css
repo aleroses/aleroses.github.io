@@ -1,0 +1,75 @@
+:root {
+  --bg-stone: #a6a09b;
+
+  --bg-zing: #fafafa;
+
+  --bg-slate3: #e2e8f0;
+  --bg-slate4: #cad5e2;
+  --bg-slate5: #90a1b9;
+  --bg-slate9: #1d293d;
+  --bg-slate100: #020618;
+
+  --bg-gray2: #f6f3f4;
+  --bg-gray3: #ebe6e7;
+  --bg-gray4: #d1d5dc;
+
+  --verified-color: #4f46e5;
+
+  --first-color: #090b10;
+  --second-color: #0f111a;
+  --fourth-color: #cbd5e1;
+  --fitfh-color: #55667c;
+  --red-logo: #ea0031;
+}
+
+.statisticsIconsCourses {
+  width: fit-content;
+  height: 1.4rem;
+
+  display: flex;
+}
+
+.statisticsIconsProjects {
+  width: fit-content;
+  height: 1.2rem;
+
+  display: flex;
+}
+
+.profileHeaderVerified {
+  width: fit-content;
+  height: 1.5rem;
+  display: flex;
+  color: var(--verified-color);
+}
+
+/* SocialMedia -------------------- */
+
+.socialMediaDiv {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.socialMediaDiv:hover {
+  box-shadow: 0 4px 15px var(--bg-stone);
+}
+
+.socialMediaIcons {
+  width: fit-content;
+  height: 1.6rem;
+
+  display: flex;
+  color: var(--first-color);
+}
+
+/* Skills */
+
+.skillsPageIcons {
+  width: fit-content;
+  /* max-width: 3rem; */
+  min-height: 4rem;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
