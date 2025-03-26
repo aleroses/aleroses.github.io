@@ -1,11 +1,12 @@
 import app from "../styles/App.module.css";
+import graduationPhoto from "../assets/photos/graduation-degree.jpg";
 
 export const ProfilePicture = () => {
   return (
     <section className={app.profileContainer}>
       <img
         className={app.profileImage}
-        src="/src/assets/photos/graduation-degree.jpg"
+        src={graduationPhoto}
         alt="Profile picture"
       />
     </section>
