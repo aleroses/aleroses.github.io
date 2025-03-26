@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter
       basename={
-        import.meta.env.PROD ? "/aleroses.github.io" : ""
+        import.meta.env.PROD ? "/aleroses.github.io/" : ""
       } /* basename="/aleroses.github.io/" */
     >
       <LanguageProvider>

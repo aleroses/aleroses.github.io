@@ -8,20 +8,14 @@ export default defineConfig(({ mode }) => ({
 
   plugins: [react()],
   base:
-    mode === "production" ? "/aleroses.github.io/" : "/", // ✔️ Solo aplica base en prod
+    mode === "production" ? "/aleroses.github.io/" : "/",
   server: {
-    open: true, // Abre automáticamente el navegador en http://localhost:5173
+    open: true,
   },
 
   esbuild: {
     loader: "jsx",
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        ".js": "jsx",
-      },
-    },
+    include: /\.(jsx|js)$/,
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"],
