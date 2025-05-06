@@ -8,13 +8,7 @@ import { LanguageProvider } from "./context/LanguageProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter
-      /* basename={
-        import.meta.env.PROD ? "/aleroses.github.io/" : ""
-      }  */
-      /* basename="/aleroses.github.io/" */
-      basename="/"
-    >
+    <BrowserRouter basename="/">
       <LanguageProvider>
         <App />
       </LanguageProvider>

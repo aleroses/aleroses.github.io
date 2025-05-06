@@ -25,9 +25,13 @@ export const LabsPage = () => {
           to="https://aleroses.github.io/memorygame-v2/"
           name="Memorigame"
         />
-        <LabLink
+        {/* <LabLink
           to="https://aleroses.github.io/fode-italian-food/"
           name="Italian Food"
+        /> */}
+        <LabLink
+          to="https://aleroses.github.io/chef-food/"
+          name="Chef Food"
         />
         <LabLink
           to="https://aleroses.github.io/async-landing/"
