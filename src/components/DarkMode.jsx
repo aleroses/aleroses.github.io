@@ -1,79 +1,38 @@
-import sun from "../assets/icons/sun.svg";
-import moon from "../assets/icons/moon.svg";
+import { useEffect, useState } from "react";
+import { FiMoon, FiSun } from "react-icons/fi";
+
 import "../styles/DarkMode.css";
 
 export const DarkMode = () => {
-  const setDarkMode = () => {
-    document
-      .querySelector("body")
-      .setAttribute("data-theme", "dark");
+  const [theme, setTheme] = useState(() => {
+    return (
+      localStorage.getItem("selectedTheme") || "light"
+    );
+  });
 
-    localStorage.setItem("selectedTheme", "dark");
-  };
-
-  const setLightMode = () => {
-    document
-      .querySelector("body")
-      .setAttribute("data-theme", "light");
-
-    localStorage.setItem("selectedTheme", "light");
-  };
-
-  const selectedTheme = localStorage.getItem(
-    "selectedTheme"
-  );
-
-  if (selectedTheme === "dark") setDarkMode();
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("selectedTheme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    const theme = document
-      .querySelector("body")
-      .getAttribute("data-theme");
-    // console.log(theme);
-    const logo = document.querySelector(".logo");
-
-    // e.target.checked ? setDarkMode() : setLightMode();
-    theme === "light" ? setDarkMode() : setLightMode();
-    theme === "light"
-      ? (logo.src = `${moon}`)
-      : (logo.src = `${sun}`);
+    setTheme((prev) =>
+      prev === "dark" ? "light" : "dark"
+    );
   };
 
-  // const changeMode = () => {
-  //   const btn = document.querySelector(".dark_mode");
-  //   const logo = document.querySelector(".logo");
-
-  //   btn.classList.toggle("dark-mode");
-
-  //   btn.classList.contains("dark-mode")
-  //     ? (logo.src = `${moon}`)
-  //     : (logo.src = `${sun}`);
-  // };
+  // const Icon = theme === "dark" ? FiMoon : FiSun;
+  // const altText =
+  // theme === "dark" ? "Moon logo" : "Sun logo";
 
   return (
-    // <div className="dark_mode">
-    //   <input
-    //     className="dark_mode_input"
-    //     type="checkbox"
-    //     id="darkmode-toggle"
-    //     onChange={toggleTheme}
-    //     defaultChecked={selectedTheme === "dark"}
-    //   />
-    //   <label
-    //     className="dark_mode_label"
-    //     htmlFor="darkmode-toggle"
-    //   >
-    //     <img className="sun" src={sun} alt="" />
-    //     <img className="moon" src={moon} alt="" />
-    //   </label>
-    // </div>
-
     <button
-      className="dark_mode"
+      className="mode-btn"
+      data-theme={theme}
       onClick={toggleTheme}
-      // onChange={toggleTheme}
     >
-      <img className="logo" src={sun} alt="Logo Luna" />
+      <FiMoon className="logo moon-icon" />
+      <FiSun className="logo sun-icon" />
     </button>
   );
 };

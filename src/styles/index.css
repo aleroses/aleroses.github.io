@@ -43,6 +43,7 @@
 }
 
 body {
+  color-scheme: only light;
   width: 100vw;
   height: 100vh;
   font-size: 100%;
@@ -63,7 +64,6 @@ body {
 }
 
 #root {
-  color-scheme: only light;
   width: 92vw;
   max-width: 30rem;
   height: 85vh;

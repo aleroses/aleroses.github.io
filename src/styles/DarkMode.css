@@ -1,100 +1,45 @@
-/* .dark_mode {
+.mode-btn {
   position: absolute;
-  margin-top: -20px;
-  margin-left: 10px;
-  top: -30px;
-  left: 2rem;
-}
-
-.dark_mode_label {
-  width: 65px;
-  height: 1.4rem;
-  height: 30px;
-  position: relative;
-  display: block;
-  background: #ebebeb;
-  border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  transition: 0.3s;
-}
-.dark_mode_label:after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  background: linear-gradient(180deg, #ffcc89, #d8860b);
-  border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-.dark_mode_input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-.dark_mode_input:checked + .dark_mode_label {
-  background: #242424;
-}
-.dark_mode_input:checked + .dark_mode_label:after {
-  left: 62px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg, #777, #3a3a3a);
-}
-.dark_mode_label:active:after {
-  width: 30px;
-}
-
-.dark_mode_label img {
-  position: absolute;
-  width: 20px;
-  top: 5px;
-  z-index: 100;
-}
-.dark_mode_label img.sun {
-  left: 5px;
-  fill: #fff;
-  transition: 0.3s;
-}
-.dark_mode_label img.moon {
-  left: 40px;
-  fill: #7e7e7e;
-  transition: 0.3s;
-}
-.dark_mode_input:checked + .dark_mode_label img.sun {
-  fill: #7e7e7e;
-}
-.dark_mode_input:checked + .dark_mode_label img.moon {
-  fill: #fff;
-} */
-
-.dark_mode {
-  position: absolute;
-  width: 22.83px;
+  width: 23px;
   height: 23px;
-  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: -0.5rem;
   right: 3.5rem;
   z-index: 1;
-  /* background: none; */
   color: var(--second-text-color);
   background-color: var(--first-text-color);
-  border: none;
+  border: 1px solid var(--first-text-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   /* transition: <propiedades> <duración> <tempo> <retraso>; */
-  /* transition: all 0.3s ease; */
   transition: transform 0.3s ease;
+  position: absolute;
 }
 
-.dark-mode .logo {
+.moon-icon {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+
+.sun-icon {
+  padding: 1px;
+  transform: rotate(-40deg);
+  opacity: 1;
+}
+
+[data-theme="dark"] .moon-icon {
   transform: rotate(40deg);
+  opacity: 1;
+}
+
+[data-theme="dark"] .sun-icon {
+  transform: rotate(0deg);
+  opacity: 0;
 }

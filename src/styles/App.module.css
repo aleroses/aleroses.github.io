@@ -300,8 +300,10 @@ p {
   /* color: var(--bg-zing); */
   color: var(--second-text-color);
   background-color: var(--first-text-color);
+  font-weight: 600;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 /* .dark_mode {
