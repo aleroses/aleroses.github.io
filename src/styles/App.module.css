@@ -293,6 +293,8 @@ p {
 .languageButton {
   /* width: auto; */
   position: absolute;
+  width: 23px;
+  height: 23px;
   top: -0.5rem;
   right: 1.5rem;
 
