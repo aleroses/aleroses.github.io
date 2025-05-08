@@ -1,4 +1,16 @@
 :root {
+  --first-bg-color: #ebe6e7;
+  --second-bg-color: #f6f3f4;
+  --first-shadow-color: #90a1b9;
+  --second-shadow-color: #a6a09b;
+  --first-text-color: #090b10;
+  --second-text-color: #fafafa;
+  /* --fourth-color: #cbd5e1;
+  --fitfh-color: #55667c;
+  --red-logo: #ea0031; */
+
+  --verified-color: #4f46e5;
+
   --bg-stone: #a6a09b;
 
   --bg-zing: #fafafa;
@@ -12,14 +24,6 @@
   --bg-gray2: #f6f3f4;
   --bg-gray3: #ebe6e7;
   --bg-gray4: #d1d5dc;
-
-  --verified-color: #4f46e5;
-
-  --first-color: #090b10;
-  --second-color: #0f111a;
-  --fourth-color: #cbd5e1;
-  --fitfh-color: #55667c;
-  --red-logo: #ea0031;
 }
 
 .statisticsIconsCourses {
@@ -53,7 +57,7 @@
 }
 
 .socialMediaDiv:hover {
-  box-shadow: 0 4px 15px var(--bg-stone);
+  box-shadow: 0 4px 15px var(--second-shadow-color);
 }
 
 .socialMediaIcons {
@@ -61,7 +65,7 @@
   height: 1.6rem;
 
   display: flex;
-  color: var(--first-color);
+  color: var(--first-text-color);
 }
 
 /* Skills */

@@ -13,10 +13,12 @@ import { Navbar } from "./components/Navbar";
 import { DesignCredit } from "./components/DesignCredit";
 import { LanguageContext } from "./context/LanguageContext";
 import { LanguageButton } from "./components/LanguageButton";
+import { DarkMode } from "./components/DarkMode";
 
 function App() {
-  const { language, setLanguage } =
-    useContext(LanguageContext);
+  const { language, setLanguage } = useContext(
+    LanguageContext
+  );
 
   const handleLanguage = () => {
     language === "en"
@@ -44,6 +46,7 @@ function App() {
         handleClick={handleLanguage}
         language={language}
       />
+      <DarkMode />
     </>
   );
 }

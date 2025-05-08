@@ -36,7 +36,7 @@ export const SkillsPage = () => {
                   color:
                     activeIndex === index
                       ? skill.color
-                      : "#1d293d",
+                      : "var(--first-text-color)",
                   boxShadow:
                     activeIndex === index
                       ? "0 1px 5px #cad5e2"

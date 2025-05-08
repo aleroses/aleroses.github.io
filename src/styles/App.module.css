@@ -1,4 +1,16 @@
 :root {
+  --first-bg-color: #ebe6e7;
+  --second-bg-color: #f6f3f4;
+  --first-shadow-color: #90a1b9;
+  --second-shadow-color: #a6a09b;
+  --first-text-color: #090b10;
+  --second-text-color: #fafafa;
+  /* --fourth-color: #cbd5e1;
+  --fitfh-color: #55667c;
+  --red-logo: #ea0031; */
+
+  --verified-color: #4f46e5;
+
   --bg-zing: #fafafa;
 
   --bg-slate3: #e2e8f0;
@@ -6,17 +18,9 @@
   --bg-slate5: #90a1b9;
   --bg-slate100: #020618;
 
-  --bg-gray2: #f6f3f4;
-  --bg-gray3: #ebe6e7;
+  /* --bg-gray2: #f6f3f4;
+  --bg-gray3: #ebe6e7; */
   --bg-gray4: #d1d5dc;
-
-  --verified-color: #4f46e5;
-
-  --first-color: #090b10;
-  --second-color: #0f111a;
-  --fourth-color: #cbd5e1;
-  --fitfh-color: #55667c;
-  --red-logo: #ea0031;
 }
 
 /* App ------------------------- */
@@ -69,7 +73,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--bg-gray3);
+  background-color: var(--first-bg-color);
   border-radius: 50%;
   /* border-radius: 56% 44% 48% 52% / 52% 45% 55% 48%; */
 }
@@ -143,7 +147,8 @@
   padding: 0.5rem 0.3rem;
 
   font-size: 0.8em;
-  color: var(--bg-slate100);
+  /* color: var(--bg-slate100); */
+  color: var(--first-text-color);
 
   font-weight: 500;
   /* border: 1px double var(--bg-gray3); */
@@ -156,8 +161,8 @@
 .active {
   font-size: 0.85em;
   font-weight: 700;
-  color: var(--bg-slate100);
-  background-color: var(--bg-gray3);
+  /* color: var(--bg-slate100); */
+  /* background-color: var(--bg-gray3); */
   box-shadow: 0 4px 15px var(--verified-color);
 }
 
@@ -243,8 +248,9 @@ p {
 .link {
   padding: 0.8rem;
   font-weight: 500;
-  color: var(--bg-slate100);
-  background-color: var(--bg-gray3);
+  /* color: var(--bg-slate100); */
+  color: var(--first-text-color);
+  background-color: var(--first-bg-color);
   border-radius: 0.5rem;
 }
 
@@ -267,14 +273,15 @@ p {
 
   border-radius: 0 0 1rem 1rem;
   font-size: 0.9em;
-  color: var(--bg-slate100);
-  background-color: var(--bg-gray3);
+  /* color: var(--bg-slate100); */
+  /* background-color: var(--bg-gray3); */
+  background-color: var(--first-bg-color);
 }
 
 .footer a {
   text-decoration: none;
 
-  animation: blink 2s ease infinite;
+  animation: blink 5s ease infinite;
 }
 
 .footer a:hover {
@@ -287,14 +294,19 @@ p {
   /* width: auto; */
   position: absolute;
   top: -0.5rem;
-  right: 2rem;
+  right: 1.5rem;
 
   padding: 0.25rem;
-  color: var(--bg-zing);
-  background-color: var(--second-color);
+  /* color: var(--bg-zing); */
+  color: var(--second-text-color);
+  background-color: var(--first-text-color);
   border-radius: 50%;
   border: none;
 }
+
+/* .dark_mode {
+  color: var(--second-text-color);
+} */
 
 @keyframes blink {
   0%,
@@ -303,7 +315,7 @@ p {
   }
 
   50% {
-    color: var(--bg-slate100);
+    color: var(--first-text-color);
   }
 }
 
