@@ -1,7 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-  --first-bg-color: #ebe6e7;
+  /* --first-bg-color: #ebe6e7; */
+  --first-bg-color: #0f172a;
   --second-bg-color: #f6f3f4;
   --first-shadow-color: #90a1b9;
   --second-shadow-color: #a6a09b;
@@ -25,7 +26,7 @@
   --bg-gray4: #d1d5dc;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --first-bg-color: #090b10;
   --second-bg-color: #0f111a;
   --first-shadow-color: #90a1b9;
@@ -40,12 +41,13 @@
   padding: 0;
   box-sizing: border-box;
 
-  transition: background-color 0.3s ease-in-out,
+  transition:
+    background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
 }
 
 body {
-  color-scheme: only light;
+  color-scheme: light;
   width: 100vw;
   height: 100vh;
   font-size: 100%;
@@ -56,10 +58,10 @@ body {
 
   /* color: var(--bg-slate100);
   background-color: var(--bg-gray3); */
-  color: var(--first-text-color);
+  color: var(--second-bg-color);
   background-color: var(--first-bg-color);
 
-  font-family: 'Roboto Mono', serif;
+  font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -79,6 +81,6 @@ body {
   padding: 0 0.7rem; /* 1rem */
 
   border-radius: 1rem;
-  background-color: var(--second-bg-color);
-  box-shadow: 0 0.25rem 0.9375rem var(--first-shadow-color);
+  /* background-color: var(--second-bg-color); */
+  /* box-shadow: 0 0.25rem 0.9375rem var(--first-shadow-color); */
 }

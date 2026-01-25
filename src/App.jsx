@@ -41,7 +41,7 @@ function App() {
 
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
-      <DesignCredit />
+      {/* <DesignCredit /> */}
       <LanguageButton
         handleClick={handleLanguage}
         language={language}

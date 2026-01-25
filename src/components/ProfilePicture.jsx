@@ -1,5 +1,5 @@
 import app from "../styles/App.module.css";
-import graduationPhoto from "../assets/photos/graduation-degree.jpg";
+import graduationPhoto from "../assets/photos/graduation-degree.png";
 
 export const ProfilePicture = () => {
   return (
