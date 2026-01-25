@@ -26,10 +26,7 @@ export const SkillsPage = () => {
           const IconComponent = skill.icon;
 
           return (
-            <div
-              className={app.containerIcon}
-              key={skill.name}
-            >
+            <div className={app.containerIcon} key={skill.name}>
               <IconComponent
                 className="skillsPageIcons gradient-icon"
                 style={{
@@ -37,9 +34,13 @@ export const SkillsPage = () => {
                     activeIndex === index
                       ? skill.color
                       : "var(--first-text-color)",
-                  boxShadow:
+                  // boxShadow:
+                  //   activeIndex === index
+                  //     ? "0 1px 5px #cad5e2"
+                  //     : "none",
+                  filter:
                     activeIndex === index
-                      ? "0 1px 5px #cad5e2"
+                      ? "drop-shadow(0 1px 5px #cad5e2)"
                       : "none",
 
                   transition: "color 0.3s ease-in-out",

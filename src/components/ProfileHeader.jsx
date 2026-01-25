@@ -16,18 +16,14 @@ export const ProfileHeader = () => {
   return (
     <main className={app.profileHeaderMain}>
       <div className={app.profileHeaderMainDiv}>
-        <h1 className={app.profileHeaderMainName}>
-          Alexander Rosas
-        </h1>
+        <h1 className={app.profileHeaderMainName}>Alexander Rosas</h1>
         <span>
           <VscVerifiedFilled className="profileHeaderVerified" />
         </span>
       </div>
       <div className={app.profileHeaderMainDegrees}>
         <span>{newLang.header.degrees.one}</span>
-        <span className={app.secondDegree}>
-          {newLang.header.degrees.two}
-        </span>
+        <span className={app.secondDegree}>{newLang.header.degrees.two}</span>
       </div>
     </main>
   );

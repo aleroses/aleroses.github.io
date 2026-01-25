@@ -71,9 +71,12 @@
 /* Skills */
 
 .skillsPageIcons {
+  /* width: fit-content;
+  min-height: 4rem; */
   width: fit-content;
-  /* max-width: 3rem; */
   min-height: 4rem;
+  height: 48px;
+
   padding: 0.4rem;
   border-radius: 1rem;
 }

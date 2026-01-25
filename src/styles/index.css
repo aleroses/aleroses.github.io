@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   --first-bg-color: #ebe6e7;
   --second-bg-color: #f6f3f4;
@@ -23,7 +25,7 @@
   --bg-gray4: #d1d5dc;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --first-bg-color: #090b10;
   --second-bg-color: #0f111a;
   --first-shadow-color: #90a1b9;
@@ -57,7 +59,7 @@ body {
   color: var(--first-text-color);
   background-color: var(--first-bg-color);
 
-  font-family: "Roboto Mono", serif;
+  font-family: 'Roboto Mono', serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -78,6 +80,5 @@ body {
 
   border-radius: 1rem;
   background-color: var(--second-bg-color);
-  box-shadow: 0 0.25rem 0.9375rem
-    var(--first-shadow-color);
+  box-shadow: 0 0.25rem 0.9375rem var(--first-shadow-color);
 }
