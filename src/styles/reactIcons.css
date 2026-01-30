@@ -65,7 +65,7 @@
   height: 1.6rem;
 
   display: flex;
-  color: var(--first-text-color);
+  /* color: var(--first-text-color); */
 }
 
 /* Skills */

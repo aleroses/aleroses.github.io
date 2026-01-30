@@ -14,20 +14,17 @@ import { DesignCredit } from "./components/DesignCredit";
 import { LanguageContext } from "./context/LanguageContext";
 import { LanguageButton } from "./components/LanguageButton";
 import { DarkMode } from "./components/DarkMode";
+import { BackgroundGalaxy } from "./components/background/BackgroundGalaxy";
 
 function App() {
-  const { language, setLanguage } = useContext(
-    LanguageContext
-  );
+  const { language, setLanguage } = useContext(LanguageContext);
 
   const handleLanguage = () => {
-    language === "en"
-      ? setLanguage("es")
-      : setLanguage("en");
+    language === "en" ? setLanguage("es") : setLanguage("en");
   };
 
   return (
-    <>
+    <BackgroundGalaxy>
       <Header />
       <ProfileHeader />
       <SocialMedia />
@@ -41,13 +38,9 @@ function App() {
 
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
-      {/* <DesignCredit /> */}
-      <LanguageButton
-        handleClick={handleLanguage}
-        language={language}
-      />
+      <LanguageButton handleClick={handleLanguage} language={language} />
       <DarkMode />
-    </>
+    </BackgroundGalaxy>
   );
 }
 
