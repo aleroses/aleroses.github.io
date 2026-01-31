@@ -22,14 +22,14 @@
 
 .appHeader {
   width: 100%;
-  max-width: 25rem;
-  min-height: 4rem;
-  position: relative;
+  /* max-width: 25rem; */
+  /* min-height: 4rem; */
+  /* position: relative; */
 
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 4rem;
+  /* gap: 4rem; */
 }
 
 /* Statistics -------------------- */
@@ -61,8 +61,8 @@
 .profileContainer {
   width: 5rem;
   height: 6rem;
-  position: absolute;
-  left: calc((100% - 5rem) / 2);
+  /* position: absolute; */
+  /* left: calc((100% - 5rem) / 2); */
 
   display: flex;
   justify-content: center;
