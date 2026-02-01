@@ -115,7 +115,7 @@
 
 /* Navbar ----------------------- */
 
-.navbarContainer {
+/* .navbarContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -132,7 +132,6 @@
   padding: 0.5rem 0.3rem;
 
   font-size: 0.8em;
-  /* color: var(--first-text-color); */
 
   font-weight: 500;
   border-radius: 0.5rem;
@@ -140,7 +139,7 @@
   transition:
     box-shadow 0.5s ease-in,
     background-color 0.5s ease-in;
-}
+} */
 
 .active {
   font-size: 0.85em;

@@ -39,7 +39,7 @@ function App() {
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
       <LanguageButton handleClick={handleLanguage} language={language} />
-      <DarkMode />
+      {/* <DarkMode /> */}
     </BackgroundGalaxy>
   );
 }
