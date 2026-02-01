@@ -58,11 +58,9 @@
 
 /* ProfilePicture ------------------- */
 
-.profileContainer {
+/* .profileContainer {
   width: 5rem;
   height: 6rem;
-  /* position: absolute; */
-  /* left: calc((100% - 5rem) / 2); */
 
   display: flex;
   justify-content: center;
@@ -74,7 +72,7 @@
 .profileImage {
   width: 4.5rem;
   border-radius: 50%;
-}
+} */
 
 /* ProfileHeader ------------------- */
 

@@ -15,16 +15,16 @@ export const Header = () => {
   const newLang = en[language] || es[language];
 
   return (
-    <header className={app.appHeader}>
-      <Statistics
+    <header className="flex justify-center">
+      {/* <Statistics
         completed={`110101`}
         category={newLang.header.statistics.courses}
-      />
+      /> */}
       <ProfilePicture />
-      <Statistics
+      {/* <Statistics
         completed={`000111`}
         category={newLang.header.statistics.projects}
-      />
+      /> */}
 
       {/* 53 - 4 */}
     </header>

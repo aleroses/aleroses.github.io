@@ -146,6 +146,65 @@ body {
   z-index: 0;
 }
 
+/* ============================= */
+/* Avatar Ring Effect */
+/* ============================= */
+
+.avatar-wrapper {
+  filter: drop-shadow(0 0 12px rgba(255, 77, 77, 0.4));
+  animation: float 4s ease-in-out infinite;
+}
+
+.avatar-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  z-index: 1;
+
+  background: repeating-conic-gradient(
+    #00ffd5 0deg 6deg,
+    transparent 6deg 12deg,
+    #00ffd5 12deg 30deg,
+    transparent 30deg 42deg
+  );
+
+  /* Máscara = anillo real */
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    black calc(100% - 2px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    black calc(100% - 2px)
+  );
+
+  animation: spin 40s linear infinite;
+  filter: drop-shadow(0 0 2px #00ffd5);
+}
+
+/* Animaciones */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
 /* Animación */
 @keyframes twinkle {
   from {

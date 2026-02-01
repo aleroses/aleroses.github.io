@@ -13,12 +13,9 @@ import { LabLink } from "./LabLink";
 
 export const SocialMedia = () => {
   return (
-    <article className={app.socialMediaContainer}>
+    <article className="text-[#00ffd5] flex justify-between">
       <div className="socialMediaDiv">
-        <LabLink
-          to="https://github.com/aleroses"
-          icon={TbBrandGithub}
-        />
+        <LabLink to="https://github.com/aleroses" icon={TbBrandGithub} />
       </div>
       <div className="socialMediaDiv">
         <LabLink
@@ -27,16 +24,10 @@ export const SocialMedia = () => {
         />
       </div>
       <div className="socialMediaDiv">
-        <LabLink
-          to="https://x.com/alerxses"
-          icon={TbBrandX}
-        />
+        <LabLink to="https://x.com/alerxses" icon={TbBrandX} />
       </div>
       <div className="socialMediaDiv">
-        <LabLink
-          to="https://www.youtube.com/@alerxses"
-          icon={TbBrandYoutube}
-        />
+        <LabLink to="https://www.youtube.com/@alerxses" icon={TbBrandYoutube} />
       </div>
       <div className="socialMediaDiv">
         <LabLink
