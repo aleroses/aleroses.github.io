@@ -16,7 +16,9 @@ export const ProfileHeader = () => {
   return (
     <main className={app.profileHeaderMain}>
       <div className={app.profileHeaderMainDiv}>
-        <h1 className="text-2xl font-bold text-[#00ffd5]">Alexander Rosas</h1>
+        <h1 className="animated-gradient-text text-2xl font-bold">
+          Alexander Rosas
+        </h1>
         <span>
           <VscVerifiedFilled className="text-[#00ffd5]" />
         </span>
@@ -28,3 +30,5 @@ export const ProfileHeader = () => {
     </main>
   );
 };
+
+// text-[#00ffd5]

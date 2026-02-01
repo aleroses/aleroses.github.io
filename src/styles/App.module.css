@@ -226,8 +226,6 @@ p {
 .link {
   padding: 0.8rem;
   font-weight: 500;
-  /* color: var(--first-text-color); */
-  /* background-color: var(--first-bg-color); */
   border-radius: 0.5rem;
 }
 

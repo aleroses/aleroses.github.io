@@ -188,6 +188,34 @@ body {
   filter: drop-shadow(0 0 2px #00ffd5);
 }
 
+/* ============================= */
+/* Animated gradient text */
+/* ============================= */
+
+.animated-gradient-text {
+  background: linear-gradient(90deg, #00ffd5, #fff, #ff4d4d);
+
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* animation: gradient-move 6s linear infinite; */
+  animation: gradient-move 10s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Animaciones */
 @keyframes spin {
   to {
