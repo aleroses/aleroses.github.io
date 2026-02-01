@@ -19,7 +19,7 @@ export const Navbar = () => {
   const t = (en[language] || es[language]).navbar;
 
   return (
-    <nav className="mt-4 flex w-full justify-between px-2">
+    <nav className="my-4 flex w-full justify-between">
       {NAV_ITEMS.map(({ to, key }) => (
         <NavLink
           key={to}
