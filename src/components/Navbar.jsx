@@ -28,7 +28,7 @@ export const Navbar = () => {
             `relative px-2 py-1 text-sm font-medium transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-[#00ffd5] after:transition-transform after:duration-300 hover:after:scale-x-100 ${
               isActive
                 ? "after:scale-x-100"
-                : "text-white/10 hover:text-white hover:drop-shadow-[0_0_6px_#ff4d4d]"
+                : "text-white/20 hover:text-white hover:drop-shadow-[0_0_6px_#ff4d4d]"
             } `
           }
         >
