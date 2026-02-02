@@ -12,7 +12,7 @@ export const AboutPage = () => {
   const newLang = en[language] || es[language];
 
   return (
-    <div className={app.aboutPageContainer}>
+    <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
       <p>{newLang.content.aboutMeContent.intro}</p>
       <p>{newLang.content.aboutMeContent.focus}</p>
 

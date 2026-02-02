@@ -13,10 +13,10 @@ export const LabsPage = () => {
   const newLang = en[language] || es[language];
 
   return (
-    <div className={app.labsContainer}>
+    <div className="h-full space-y-4 overflow-y-auto pr-1 text-sm font-light">
       <p>{newLang.content.labsContent}</p>
 
-      <div className={app.linksContainer}>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2">
         <LabLink
           to="https://alevroses.github.io/api__movies/"
           name="Look Movie"
@@ -29,10 +29,7 @@ export const LabsPage = () => {
           to="https://aleroses.github.io/fode-italian-food/"
           name="Italian Food"
         /> */}
-        <LabLink
-          to="https://aleroses.github.io/chef-food/"
-          name="Chef Food"
-        />
+        <LabLink to="https://aleroses.github.io/chef-food/" name="Chef Food" />
         <LabLink
           to="https://aleroses.github.io/async-landing/"
           name="Landing Page"

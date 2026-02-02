@@ -115,39 +115,11 @@
 
 /* Navbar ----------------------- */
 
-/* .navbarContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 1rem 0;
-}
-
-.navbarContainerNavLink {
-  min-width: 25%;
-  text-decoration: none;
-  text-align: center;
-  text-wrap: balance;
-  padding: 0.5rem 0.3rem;
-
-  font-size: 0.8em;
-
-  font-weight: 500;
-  border-radius: 0.5rem;
-
-  transition:
-    box-shadow 0.5s ease-in,
-    background-color 0.5s ease-in;
-} */
-
-.active {
+/* .active {
   font-size: 0.85em;
   font-weight: 700;
-  /* color: var(--bg-slate100); */
-  /* background-color: var(--bg-gray3); */
   box-shadow: 0 4px 15px var(--verified-color);
-}
+} */
 
 /* AboutPage --------------------- */
 
@@ -158,9 +130,9 @@
   font-size: 0.8em;
   font-weight: 300;
 
-  overflow: auto;
+  /* overflow: auto; */
 
-  margin: 0 0 3rem;
+  /* margin: 0 0 3rem; */
 }
 
 p {
@@ -178,9 +150,9 @@ p {
   font-size: 0.8em;
   font-weight: 300;
 
-  overflow: auto;
+  /* overflow: auto; */
 
-  margin: 0 0 3rem;
+  /* margin: 0 0 3rem; */
 }
 
 .skillsPageIconsContainer {
@@ -209,8 +181,8 @@ p {
   gap: 1rem;
   font-size: 0.8em;
   font-weight: 300;
-  overflow: auto;
-  margin: 0 0 3rem;
+  /* overflow: auto; */
+  /* margin: 0 0 3rem; */
 }
 
 .linksContainer {

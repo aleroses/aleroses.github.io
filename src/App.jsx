@@ -10,7 +10,6 @@ import { SkillsPage } from "./pages/SkillsPage";
 import { LabsPage } from "./pages/LabsPage";
 
 import { Navbar } from "./components/Navbar";
-import { DesignCredit } from "./components/DesignCredit";
 import { LanguageContext } from "./context/LanguageContext";
 import { LanguageButton } from "./components/LanguageButton";
 import { DarkMode } from "./components/DarkMode";
@@ -25,21 +24,25 @@ function App() {
 
   return (
     <BackgroundGalaxy>
+      {/* <section className="relative flex h-full w-full max-w-sm flex-col"> */}
       <Header />
       <ProfileHeader />
       <SocialMedia />
 
+      <LanguageButton handleClick={handleLanguage} language={language} />
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<AboutPage />} />
-        <Route path="skills" element={<SkillsPage />} />
-        <Route path="labs" element={<LabsPage />} />
+      <section className="relative overflow-hidden">
+        <Routes>
+          <Route path="/" element={<AboutPage />} />
+          <Route path="skills" element={<SkillsPage />} />
+          <Route path="labs" element={<LabsPage />} />
 
-        <Route path="/*" element={<Navigate to="/" />} />
-      </Routes>
-      <LanguageButton handleClick={handleLanguage} language={language} />
-      {/* <DarkMode /> */}
+          <Route path="/*" element={<Navigate to="/" />} />
+        </Routes>
+        {/* <DarkMode /> */}
+      </section>
+      {/* </section> */}
     </BackgroundGalaxy>
   );
 }

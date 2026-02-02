@@ -18,17 +18,17 @@ export const SkillsPage = () => {
   const activeIndex = useAnimatedIcons(skills, 1000);
 
   return (
-    <section className={app.skillsPageContainer}>
+    <section className="h-full space-y-4 overflow-y-auto text-sm font-light">
       <p>{newLang.content.skillsContent}</p>
 
-      <div className={app.skillsPageIconsContainer}>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(60px,1fr))] gap-2 rounded-xl p-2">
         {skills.map((skill, index) => {
           const IconComponent = skill.icon;
 
           return (
-            <div className={app.containerIcon} key={skill.name}>
+            <div className="flex justify-center" key={skill.name}>
               <IconComponent
-                className="skillsPageIcons gradient-icon"
+                className="skillsPageIcons gradient-icon transition-all duration-300"
                 style={{
                   color:
                     activeIndex === index
