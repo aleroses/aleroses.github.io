@@ -204,6 +204,11 @@ body {
   animation: gradient-move 10s linear infinite;
 }
 
+/* .experience:hover {
+  box-shadow: #00ffd5;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 @keyframes gradient-move {
   0% {
     background-position: 0% 50%;

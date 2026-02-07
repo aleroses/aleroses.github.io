@@ -24,8 +24,11 @@ export const ProfileHeader = () => {
         </span>
       </div>
       <div className="flex flex-col">
-        <span>{newLang.header.degrees.one}</span>
-        <span className="text-[0.8rem]">{newLang.header.degrees.two}</span>
+        {newLang.header.degrees.map((item, index) => (
+          <span key={item} className="last:text-[0.8rem]">
+            {item}
+          </span>
+        ))}
       </div>
     </main>
   );

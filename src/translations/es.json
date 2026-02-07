@@ -5,10 +5,7 @@
         "courses": "Cursos",
         "projects": "Proyectos"
       },
-      "degrees": {
-        "one": "Desarrollador Frontend",
-        "two": "Administrador Industrial"
-      }
+      "degrees": ["Frontend Developer", "Industrial Manager"]
     },
     "navbar": {
       "aboutMe": "Sobre mí",
@@ -17,9 +14,43 @@
     },
     "content": {
       "aboutMeContent": {
-        "intro": "Soy Administrador Industrial y, en los últimos años, he ampliado mis horizontes hacia el mundo de la Ingeniería de Software, con el objetivo de resolver problemas y convertir ideas en soluciones reales.",
-        "focus": "Me gusta sumergirme en lo que hago, ya sea en el flujo de una línea de producción o en el algoritmo detrás de un sistema web. Para mí, cada desafío es una oportunidad de aprendizaje, y cada proyecto es una forma de demostrar cómo la dedicación y el conocimiento pueden cambiar vidas.",
-        "learning": "Cuando no estoy desarrollando soluciones tecnológicas u optimizando procesos, probablemente estoy aprendiendo algo nuevo, explorando cómo mejorar continuamente y ayudando a otros a crecer."
+        "intro": [
+          "Soy Administrador Industrial y, en los últimos años, he ampliado mis horizontes hacia el mundo de la Ingeniería de Software, con el objetivo de resolver problemas y convertir ideas en soluciones reales.",
+          "Me gusta sumergirme en lo que hago, ya sea en el flujo de una línea de producción o en el algoritmo detrás de un sistema web. Para mí, cada desafío es una oportunidad de aprendizaje, y cada proyecto es una forma de demostrar cómo la dedicación y el conocimiento pueden cambiar vidas.",
+          "Cuando no estoy desarrollando soluciones tecnológicas u optimizando procesos, probablemente estoy aprendiendo algo nuevo, explorando cómo mejorar continuamente y ayudando a otros a crecer."
+        ],
+        "experience": {
+          "title": "Experiencia profesional como administrador industrial.",
+          "items": [
+            {
+              "role": "Asistente de Materia Prima",
+              "company": "Editora El Comercio S.A.",
+              "location": "Lima, Perú",
+              "period": "Dec 2017 – Jun 2019",
+              "responsibilities": [
+                "Controlé y analicé el consumo de materia prima, identificando mermas y elaborando reportes mensuales para garantizar la trazabilidad del proceso productivo."
+              ]
+            },
+            {
+              "role": "Encargado de Bodega",
+              "company": "REPLAU S.A.C.",
+              "location": "Lima, Perú",
+              "period": "Aug 2016 – Sep 2017",
+              "responsibilities": [
+                "Gestioné y controlé el flujo del almacén, asegurando el orden, trazabilidad y abastecimiento oportuno de materiales para producción."
+              ]
+            },
+            {
+              "role": "Supervisor de SST",
+              "company": "COINREFRI S.R.L.",
+              "location": "Piura, Perú",
+              "period": "Dec 2014 – Jul 2016",
+              "responsibilities": [
+                "Supervisé y promoví la seguridad y salud en el trabajo mediante inspecciones, capacitaciones y acciones de prevención y control de riesgos, fomentando un entorno laboral seguro y ordenado."
+              ]
+            }
+          ]
+        }
       },
       "skillsContent": "Mi especialidad es el Desarrollo Web y el ecosistema de tecnologías que lo rodea. A continuación, se muestra un resumen de mis habilidades:",
       "labsContent": "En esta sección, encontrarás una selección de proyectos en los que he trabajado a lo largo de varios meses. Cada uno representa un desafío único y una oportunidad para aplicar y expandir mis habilidades. Estoy constantemente explorando nuevas ideas, así que no dudes en volver pronto para descubrir más."

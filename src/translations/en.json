@@ -5,10 +5,7 @@
         "courses": "Courses",
         "projects": "Projects"
       },
-      "degrees": {
-        "one": "Frontend Developer",
-        "two": "Industrial Manager"
-      }
+      "degrees": ["Frontend Developer", "Industrial Manager"]
     },
     "navbar": {
       "aboutMe": "About",
@@ -17,9 +14,43 @@
     },
     "content": {
       "aboutMeContent": {
-        "intro": "I'm an Industrial Administrator and, in recent years, I have expanded my horizons into the world of Software Engineering, aiming to solve problems and turn ideas into real solutions.",
-        "focus": "I enjoy immersing myself in what I do, whether it's the flow of a production line or the algorithm behind a web system. For me, every challenge is an opportunity to learn, and every project is a way to demonstrate how dedication and knowledge can change lives.",
-        "learning": "When I'm not developing technological solutions or optimizing processes, I'm probably learning something new, exploring ways to continuously improve, and helping others grow."
+        "intro": [
+          "I'm an Industrial Administrator and, in recent years, I have expanded my horizons into the world of Software Engineering, aiming to solve problems and turn ideas into real solutions.",
+          "I enjoy immersing myself in what I do, whether it's the flow of a production line or the algorithm behind a web system. For me, every challenge is an opportunity to learn, and every project is a way to demonstrate how dedication and knowledge can change lives.",
+          "When I'm not developing technological solutions or optimizing processes, I'm probably learning something new, exploring ways to continuously improve, and helping others grow."
+        ],
+        "experience": {
+          "title": "Professional experience as an Industrial Administrator",
+          "items": [
+            {
+              "role": "Raw Materials Assistant",
+              "company": "Editora El Comercio S.A.",
+              "location": "Lima, Peru",
+              "period": "Dec 2017 – Jun 2019",
+              "responsibilities": [
+                "Monitored and analyzed raw material consumption, identifying waste and preparing monthly reports to ensure traceability throughout the production process."
+              ]
+            },
+            {
+              "role": "Warehouse Supervisor",
+              "company": "REPLAU S.A.C.",
+              "location": "Lima, Peru",
+              "period": "Aug 2016 – Sep 2017",
+              "responsibilities": [
+                "Managed and controlled warehouse operations, ensuring order, traceability, and timely supply of materials for production."
+              ]
+            },
+            {
+              "role": "Occupational Health & Safety Supervisor (OHS)",
+              "company": "COINREFRI S.R.L.",
+              "location": "Piura, Peru",
+              "period": "Dec 2014 – Jul 2016",
+              "responsibilities": [
+                "Supervised and promoted occupational health and safety through inspections, training sessions, and risk prevention and control measures, fostering a safe and organized work environment."
+              ]
+            }
+          ]
+        }
       },
       "skillsContent": "My specialty is Web Development and the ecosystem of technologies surrounding it. Below is a summary of my skills:",
       "labsContent": "In this section, you will find a selection of projects I have worked on over several months. Each one represents a unique challenge and an opportunity to apply and expand my skills. I am constantly exploring new ideas, so feel free to check back soon to discover more."
