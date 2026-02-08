@@ -8,6 +8,7 @@ export const LabLink = ({
   baseColor,
   hoverColor,
   shadowColor,
+  className = "",
 }) => {
   return (
     <a
@@ -15,16 +16,15 @@ export const LabLink = ({
       aria-label={name ?? "Social network link"}
       target="_blank"
       rel="noopener noreferrer"
-      // className={`${name ? app.link : ""}`}
       style={{
         "--icon-base": baseColor,
         "--icon-hover": hoverColor,
         "--icon-shadow": shadowColor,
       }}
-      className="group transition-all duration-300"
+      className={`group transition-all duration-300 ${className}`}
     >
       {name ? (
-        name
+        <span>{name}</span>
       ) : (
         <Icon
           className="text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)]"
