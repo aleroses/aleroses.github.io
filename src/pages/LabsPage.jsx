@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { LabLink } from "../components/LabLink";
 import { LanguageContext } from "../context/LanguageContext";
 
+import { labLinks } from "../data/labLinks";
 import en from "/src/translations/en.json";
 import es from "/src/translations/es.json";
 
@@ -13,53 +14,19 @@ export const LabsPage = () => {
   const newLang = en[language] || es[language];
 
   return (
-    <div className="h-full space-y-4 overflow-y-auto pr-1 text-sm font-light">
+    <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
       <p>{newLang.content.labsContent}</p>
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2">
-        <LabLink
-          to="https://alevroses.github.io/api__movies/"
-          name="Look Movie"
-        />
-        <LabLink
-          to="https://aleroses.github.io/memorygame-v2/"
-          name="Memorigame"
-        />
-        {/* <LabLink
-          to="https://aleroses.github.io/fode-italian-food/"
-          name="Italian Food"
-        /> */}
-        <LabLink to="https://aleroses.github.io/chef-food/" name="Chef Food" />
-        <LabLink
-          to="https://aleroses.github.io/async-landing/"
-          name="Landing Page"
-        />
-        <LabLink
-          to="https://aleroses.github.io/js__countdown/"
-          name="Countdown"
-        />
-        <LabLink
-          to="https://aleroses.github.io/videogame/"
-          name="Explosive Game"
-        />
-        <LabLink
-          to="https://aleroses.github.io/Blog.github.io/"
-          name="Blog X"
-        />
-        <LabLink
-          to="https://github.com/aleroses/Platzi/tree/master/DW"
-          name="Notes"
-        />
+        {labLinks.map((item, index) => (
+          <div
+            key={item.name}
+            className="rounded-2xl border border-[#8892b026] bg-[#0a0f1a99] p-5 backdrop-blur-md transition-all duration-250 ease-in-out hover:border-[#00ffd5]"
+          >
+            <LabLink to={item.url} name={item.name} />
+          </div>
+        ))}
       </div>
-      {/* <p>
-    En esta sección, encontrarás una selección de
-    proyectos en los que he trabajado a lo largo de
-    varios meses. Cada uno representa un desafío único y
-    una oportunidad para aplicar y expandir mis
-    habilidades. Estoy constantemente explorando nuevas
-    ideas, así que no dudes en volver pronto para
-    descubrir más.
-  </p> */}
     </div>
   );
 };
