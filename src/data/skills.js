@@ -1,14 +1,17 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { RxFigmaLogo } from "react-icons/rx";
-import { SiJest, SiTestinglibrary } from "react-icons/si";
+import { RiReactjsLine, RiReactjsFill } from "react-icons/ri";
+import { SiJest, SiTestinglibrary, SiVim, SiDebian } from "react-icons/si";
 import {
-  TbBrandCss3,
-  TbBrandGit,
-  TbBrandGithub,
   TbBrandHtml5,
+  TbBrandCss3,
   TbBrandJavascript,
   TbBrandTypescript,
+  TbBrandTailwind,
+  TbBrandGit,
+  TbBrandGithub,
+  TbBrandFigma,
+  TbBrandDebian,
 } from "react-icons/tb";
+// import {} from "@tabler/icons-react";
 
 export const skills = [
   {
@@ -16,59 +19,103 @@ export const skills = [
     name: "HTML",
     color: "#E34F26",
     // colors: ["#E34F26", "#F16529"],
+    stroke: true,
+    paint: "stroke",
   },
   {
     icon: TbBrandCss3,
     name: "CSS",
     color: "#1572B6",
     // colors: ["#1572B6", "#33A9DC"],
+    stroke: true,
+    paint: "stroke",
   },
   {
     icon: TbBrandJavascript,
-    name: "JS",
+    name: "JavaScript",
     color: "#F7DF1E",
     // colors: ["#F7DF1E", "#000000"],
+    stroke: true,
+    paint: "stroke",
   },
   {
     icon: TbBrandTypescript,
-    name: "TS",
+    name: "TypeScript",
     color: "#3178C6",
     // colors: ["#3178C6", "#ffffff"],
+    stroke: true,
+    paint: "stroke",
   },
   {
-    icon: RiReactjsLine,
+    icon: TbBrandTailwind,
+    name: "Tailwind",
+    color: "#3178C6",
+    // colors: ["#3178C6", "#ffffff"],
+    stroke: true,
+    paint: "stroke",
+  },
+  {
+    icon: RiReactjsFill,
     name: "React",
     color: "#61DAFB",
     // colors: ["#61DAFB", "#222222"],
+    fill: true,
+    paint: "fill",
   },
   {
     icon: TbBrandGit,
     name: "Git",
     color: "#F05032",
     // colors: ["#F05032", "#E44D26"],
+    stroke: true,
+    paint: "stroke",
   },
   {
     icon: TbBrandGithub,
     name: "GitHub",
-    color: "#181717",
+    color: "#8892b0",
     // colors: ["#181717", "#ffffff"],
+    stroke: true,
+    paint: "stroke",
   },
   {
-    icon: RxFigmaLogo,
+    icon: TbBrandFigma,
     name: "Figma",
     color: "#F24E1E",
     // colors: ["#F24E1E", "#0ACF83", "#FF7262", "#A259FF"],
+    fill: true,
+    paint: "fill",
   },
   {
     icon: SiJest,
     name: "Jest",
     color: "#99425B",
     // colors: ["#99425B", "#C21325"],
+    fill: true,
+    paint: "fill",
   },
   {
     icon: SiTestinglibrary,
     name: "Testing Library",
     color: "#FF4088",
     // colors: ["#FF4088", "#E03457"],
+    fill: true,
+    paint: "fill",
+  },
+  {
+    icon: SiVim,
+    name: "Vim",
+    color: "#00FF00",
+    // colors: ["#FF4088", "#E03457"],
+    fill: true,
+    paint: "fill",
+  },
+  {
+    icon: SiDebian,
+    name: "Linux",
+    color: "#D70A53",
+    // colors: ["#FF4088", "#E03457"],
+    fill: true,
+    paint: "fill",
   },
 ];
