@@ -53,7 +53,56 @@
         }
       },
       "skillsContent": "Mi especialidad es el Desarrollo Web y el ecosistema de tecnologías que lo rodea. A continuación, se muestra un resumen de mis habilidades:",
-      "labsContent": "En esta sección, encontrarás una selección de proyectos en los que he trabajado a lo largo de varios meses. Cada uno representa un desafío único y una oportunidad para aplicar y expandir mis habilidades. Estoy constantemente explorando nuevas ideas, así que no dudes en volver pronto para descubrir más."
+      "labsContent": {
+        "intro": "En esta sección, encontrarás una selección de proyectos en los que he trabajado a lo largo de varios meses. Cada uno representa un desafío único y una oportunidad para aplicar y expandir mis habilidades. Estoy constantemente explorando nuevas ideas, así que no dudes en volver pronto para descubrir más.",
+        "projects": [
+          {
+            "id": "look-movie",
+            "title": "Look Movie",
+            "description": "Web para explorar una gran variedad de películas, desarrollada con un fuerte enfoque en diseño responsivo. ¡Estoy muy orgulloso de este trabajo!"
+          },
+          {
+            "id": "memory-game",
+            "title": "Memory Game",
+            "description": "Juego de memoria en el que debes encontrar los pares correctos mientras las cartas se muestran y ocultan dinámicamente."
+          },
+          {
+            "id": "chef-food",
+            "title": "Chef Food",
+            "description": "Sitio web para un restaurante, con menú de platillos, bebidas y postres. Destaca por una UI moderna y atractiva, pensada para un público actual."
+          },
+          {
+            "id": "landing-page",
+            "title": "Landing Page",
+            "description": "Landing para conocer y descubrir los últimos videos de Fazt Code, uno de los desarrolladores que más sigo y de quien he aprendido mucho."
+          },
+          {
+            "id": "countdown",
+            "title": "Countdown",
+            "description": "Cuenta regresiva que muestra cuántos días y horas faltan para el Año Nuevo. Un proyecto simple pero ideal para los amantes de las festividades :)"
+          },
+          {
+            "id": "explosive-game",
+            "title": "Explosive Game",
+            "description": "Mi primer videojuego desarrollado con JavaScript. El objetivo es esquivar bombas y seguir una ruta para avanzar de nivel."
+          },
+          {
+            "id": "blog-x",
+            "title": "Blog X",
+            "description": "Plataforma para compartir novedades a modo de bitácora digital personal. El proyecto puede ser clonado y usado libremente para publicar contenido."
+          },
+          {
+            "id": "mario-game",
+            "title": "Mario Game",
+            "description": "Versión alternativa al clásico Tic Tac Toe. Con funcionalidades para jugar contra el sistema en distintos niveles de dificultad. ¡En desarrollo!"
+          },
+          {
+            "id": "notes",
+            "title": "Notes",
+            "description": "Mis apuntes personales sobre lo que he aprendido a lo largo de mi camino como Desarrollador Frontend. Ideal para repasar y compartir conocimiento."
+          }
+        ]
+      }
     },
     "general": {
       "credits": "Diseñado por"

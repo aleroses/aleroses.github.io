@@ -53,7 +53,56 @@
         }
       },
       "skillsContent": "My specialty is Web Development and the ecosystem of technologies surrounding it. Below is a summary of my skills:",
-      "labsContent": "In this section, you will find a selection of projects I have worked on over several months. Each one represents a unique challenge and an opportunity to apply and expand my skills. I am constantly exploring new ideas, so feel free to check back soon to discover more."
+      "labsContent": {
+        "intro": "In this section, you will find a selection of projects I have worked on over several months. Each one represents a unique challenge and an opportunity to apply and expand my skills. I am constantly exploring new ideas, so feel free to check back soon to discover more.",
+        "projects": [
+          {
+            "id": "look-movie",
+            "title": "Look Movie",
+            "description": "A web app to explore a wide variety of movies, developed with a strong focus on responsive design. I’m really proud of this project!"
+          },
+          {
+            "id": "memory-game",
+            "title": "Memory Game",
+            "description": "A memory game where you must find matching pairs as cards are dynamically revealed and hidden."
+          },
+          {
+            "id": "chef-food",
+            "title": "Chef Food",
+            "description": "A restaurant website featuring a menu of dishes, drinks, and desserts. It stands out for its modern and visually appealing UI, designed for today’s audience."
+          },
+          {
+            "id": "landing-page",
+            "title": "Landing Page",
+            "description": "A landing page to discover the latest videos from Fazt Code, one of the developers I follow the most and from whom I’ve learned a lot."
+          },
+          {
+            "id": "countdown",
+            "title": "Countdown",
+            "description": "A countdown that shows how many days and hours are left until the New Year. A simple but fun project for those who love celebrations :)"
+          },
+          {
+            "id": "explosive-game",
+            "title": "Explosive Game",
+            "description": "My first video game developed with JavaScript. The goal is to avoid bombs and follow a specific path to advance to the next level."
+          },
+          {
+            "id": "blog-x",
+            "title": "Blog X",
+            "description": "A platform for sharing updates as a personal digital journal. The project can be cloned and freely used to start publishing content."
+          },
+          {
+            "id": "mario-game",
+            "title": "Mario Game",
+            "description": "An alternative version of the classic Tic Tac Toe, featuring gameplay against the system with different difficulty levels. Currently in development!"
+          },
+          {
+            "id": "notes",
+            "title": "Notes",
+            "description": "My personal notes covering everything I’ve learned throughout my journey as a Frontend Developer. Great for reviewing and sharing knowledge."
+          }
+        ]
+      }
     },
     "general": {
       "credits": "Designed by"

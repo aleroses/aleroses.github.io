@@ -15,7 +15,7 @@ export const LabsPage = () => {
 
   return (
     <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
-      <p>{newLang.content.labsContent}</p>
+      <p>{newLang.content.labsContent.intro}</p>
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2">
         {labLinks.map((item, index) => (
@@ -32,29 +32,60 @@ export const LabsPage = () => {
 
 /* 
 Look Movie
-Web en la que se puede ver gran variedad de películas y principalmente construida teniendo en cuenta un diseño responsivo. ¡Estoy muy orgulloso de este trabajo!
+Web para explorar una gran variedad de películas, desarrollada con un fuerte enfoque en diseño responsivo. ¡Estoy muy orgulloso de este trabajo!
 
-Memorygame
-Juego de memoria que muestra u oculta cartas a medida que emparejas correctamente los pares de la carta mostrada inicialmente.
+Memory Game
+Juego de memoria en el que debes encontrar los pares correctos mientras las cartas se muestran y ocultan dinámicamente.
 
 Chef Food
-Web pensada para un restaurante, con variedad de platillos, bebidas y postres. La UI es muy moderna y atractiva para un público más actual.
+Sitio web para un restaurante, con menú de platillos, bebidas y postres. Destaca por una UI moderna y atractiva, pensada para un público actual.
 
 Landing Page
-
+Landing para conocer y descubrir los últimos videos de Fazt Code, uno de los desarrolladores que más sigo y de quien he aprendido mucho.
 
 Countdown
-
-
-
+Cuenta regresiva que muestra cuántos días y horas faltan para el Año Nuevo. Un proyecto simple pero ideal para los amantes de las festividades :)
 
 Explosive Game
-Este fue el primer videojuego que hice con JS, en el que tienes que evitar las bombas y seguir por una ruta determinada para continuar al siguiente nivel.
+Mi primer videojuego desarrollado con JavaScript. El objetivo es esquivar bombas y seguir una ruta para avanzar de nivel.
 
 Blog X
+Plataforma para compartir novedades a modo de bitácora digital personal. El proyecto puede ser clonado y usado libremente para publicar contenido.
 
 Mario Game
+Versión alternativa al clásico Tic Tac Toe. Con funcionalidades para jugar contra el sistema en distintos niveles de dificultad. ¡En desarrollo!
 
 Notes
+Mis apuntes personales sobre lo que he aprendido a lo largo de mi camino como Desarrollador Frontend. Ideal para repasar y compartir conocimiento.
+
+*/
+
+/* 
+Look Movie
+A web app to explore a wide variety of movies, developed with a strong focus on responsive design. I’m really proud of this project!
+
+Memory Game
+A memory game where you must find matching pairs as cards are dynamically revealed and hidden.
+
+Chef Food
+A restaurant website featuring a menu of dishes, drinks, and desserts. It stands out for its modern and visually appealing UI, designed for today’s audience.
+
+Landing Page
+A landing page to discover the latest videos from Fazt Code, one of the developers I follow the most and from whom I’ve learned a lot.
+
+Countdown
+A countdown that shows how many days and hours are left until the New Year. A simple but fun project for those who love celebrations :)
+
+Explosive Game
+My first video game developed with JavaScript. The goal is to avoid bombs and follow a specific path to advance to the next level.
+
+Blog X
+A platform for sharing updates as a personal digital journal. The project can be cloned and freely used to start publishing content.
+
+Mario Game
+An alternative version of the classic Tic Tac Toe, featuring gameplay against the system with different difficulty levels. Currently in development!
+
+Notes
+My personal notes covering everything I’ve learned throughout my journey as a Frontend Developer. Great for reviewing and sharing knowledge.
 
 */
