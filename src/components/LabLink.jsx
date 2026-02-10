@@ -1,5 +1,4 @@
-import app from "../styles/App.module.css";
-// import "../styles/reactIcons.css";
+import { TbExternalLink } from "react-icons/tb";
 
 export const LabLink = ({
   url,
@@ -21,10 +20,16 @@ export const LabLink = ({
         "--icon-hover": hoverColor,
         "--icon-shadow": shadowColor,
       }}
-      className={`group transition-all duration-300 ${className}`}
+      className={`group inline-flex items-center gap-1 transition-all duration-300 ${className}`}
     >
       {name ? (
-        <span>{name}</span>
+        <span className="flex items-center gap-1 font-medium">
+          {name}
+          <TbExternalLink
+            className="transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5 group-hover:text-[#00ffd5]"
+            size={14}
+          />
+        </span>
       ) : (
         <Icon
           className="text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)]"

@@ -1,34 +1,35 @@
 import { useContext } from "react";
-import { LabLink } from "../components/LabLink";
 import { LanguageContext } from "../context/LanguageContext";
+import { LabCard } from "../components/LabCard";
 
-import { labLinks } from "../data/labLinks";
 import en from "/src/translations/en.json";
 import es from "/src/translations/es.json";
-
-// import app from "../styles/App.module.css";
 
 export const LabsPage = () => {
   const { language } = useContext(LanguageContext);
 
   const newLang = en[language] || es[language];
+  const { intro, projects } = newLang.content.labsContent;
 
   return (
     <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
-      <p>{newLang.content.labsContent.intro}</p>
+      <p>{intro}</p>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2">
-        {labLinks.map((item, index) => (
-          <LabLink
-            url={item.url}
-            name={item.name}
-            className="rounded-2xl border border-[#8892b026] bg-[#0a0f1a99] p-5 backdrop-blur-md transition-all duration-250 ease-in-out hover:border-[#00ffd5]"
+      <div className="grid gap-4 sm:grid-cols-2">
+        {projects.map((project, index) => (
+          <LabCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            url={project.url}
           />
         ))}
       </div>
     </div>
   );
 };
+
+// grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2
 
 /* 
 Look Movie

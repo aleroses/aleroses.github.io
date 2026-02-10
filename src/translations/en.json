@@ -59,47 +59,56 @@
           {
             "id": "look-movie",
             "title": "Look Movie",
-            "description": "A web app to explore a wide variety of movies, developed with a strong focus on responsive design. I’m really proud of this project!"
+            "description": "A web app to explore a wide variety of movies, developed with a strong focus on responsive design. I’m really proud of this project!",
+            "url": "https://alevroses.github.io/api__movies/"
           },
           {
             "id": "memory-game",
             "title": "Memory Game",
-            "description": "A memory game where you must find matching pairs as cards are dynamically revealed and hidden."
+            "description": "A memory game where you must find matching pairs as cards are dynamically revealed and hidden.",
+            "url": "https://aleroses.github.io/memorygame-v2/"
           },
           {
             "id": "chef-food",
             "title": "Chef Food",
-            "description": "A restaurant website featuring a menu of dishes, drinks, and desserts. It stands out for its modern and visually appealing UI, designed for today’s audience."
+            "description": "A restaurant website featuring a menu of dishes, drinks, and desserts. It stands out for its modern and visually appealing UI, designed for today’s audience.",
+            "url": "https://aleroses.github.io/chef-food/"
           },
           {
             "id": "landing-page",
             "title": "Landing Page",
-            "description": "A landing page to discover the latest videos from Fazt Code, one of the developers I follow the most and from whom I’ve learned a lot."
+            "description": "A landing page to discover the latest videos from Fazt Code, one of the developers I follow the most and from whom I’ve learned a lot.",
+            "url": "https://aleroses.github.io/async-landing/"
           },
           {
             "id": "countdown",
             "title": "Countdown",
-            "description": "A countdown that shows how many days and hours are left until the New Year. A simple but fun project for those who love celebrations :)"
+            "description": "A countdown that shows how many days and hours are left until the New Year. A simple but fun project for those who love celebrations :)",
+            "url": "https://aleroses.github.io/js__countdown/"
           },
           {
             "id": "explosive-game",
             "title": "Explosive Game",
-            "description": "My first video game developed with JavaScript. The goal is to avoid bombs and follow a specific path to advance to the next level."
+            "description": "My first video game developed with JavaScript. The goal is to avoid bombs and follow a specific path to advance to the next level.",
+            "url": "https://aleroses.github.io/videogame/"
           },
           {
             "id": "blog-x",
             "title": "Blog X",
-            "description": "A platform for sharing updates as a personal digital journal. The project can be cloned and freely used to start publishing content."
+            "description": "A platform for sharing updates as a personal digital journal. The project can be cloned and freely used to start publishing content.",
+            "url": "https://aleroses.github.io/Blog.github.io/"
           },
           {
             "id": "mario-game",
             "title": "Mario Game",
-            "description": "An alternative version of the classic Tic Tac Toe, featuring gameplay against the system with different difficulty levels. Currently in development!"
+            "description": "An alternative version of the classic Tic Tac Toe, featuring gameplay against the system with different difficulty levels. Currently in development!",
+            "url": "https://aleroses.github.io/tic-tac-toe/"
           },
           {
             "id": "notes",
             "title": "Notes",
-            "description": "My personal notes covering everything I’ve learned throughout my journey as a Frontend Developer. Great for reviewing and sharing knowledge."
+            "description": "My personal notes covering everything I’ve learned throughout my journey as a Frontend Developer. Great for reviewing and sharing knowledge.",
+            "url": "https://github.com/aleroses/Platzi/tree/master/DW"
           }
         ]
       }
