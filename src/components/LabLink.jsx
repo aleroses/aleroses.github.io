@@ -32,7 +32,7 @@ export const LabLink = ({
         </span>
       ) : (
         <Icon
-          className="text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)]"
+          className="text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)] md:h-6.5 md:w-6.5"
           size={22}
         />
       )}

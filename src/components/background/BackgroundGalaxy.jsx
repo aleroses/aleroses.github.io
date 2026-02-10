@@ -7,7 +7,7 @@ export const BackgroundGalaxy = ({ children }) => {
       <div className="nebula"></div>
 
       {/* Contenido */}
-      <main className="relative grid min-h-screen place-content-start p-4 text-center text-gray-50">
+      <main className="relative grid min-h-screen place-content-start p-4 text-center text-gray-50 md:p-8 lg:px-20">
         {children}
       </main>
     </div>

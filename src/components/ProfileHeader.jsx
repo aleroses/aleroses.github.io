@@ -16,7 +16,7 @@ export const ProfileHeader = () => {
   return (
     <main className={app.profileHeaderMain}>
       <div className={app.profileHeaderMainDiv}>
-        <h1 className="animated-gradient-text text-2xl font-bold">
+        <h1 className="animated-gradient-text text-2xl font-bold md:text-3xl lg:text-5xl">
           Alexander Rosas
         </h1>
         <span>
@@ -25,7 +25,10 @@ export const ProfileHeader = () => {
       </div>
       <div className="flex flex-col">
         {newLang.header.degrees.map((item, index) => (
-          <span key={item} className="last:text-[0.8rem]">
+          <span
+            key={item}
+            className="last:text-[0.8rem] md:text-[1.2rem] md:last:text-[0.9rem]"
+          >
             {item}
           </span>
         ))}

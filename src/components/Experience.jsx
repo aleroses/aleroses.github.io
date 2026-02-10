@@ -1,6 +1,6 @@
 export const Experience = ({ newLang }) => {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
       {newLang.content.aboutMeContent.experience.items.map((job, index) => (
         <div
           key={index}

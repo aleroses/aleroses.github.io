@@ -12,7 +12,6 @@ import { LabsPage } from "./pages/LabsPage";
 import { Navbar } from "./components/Navbar";
 import { LanguageContext } from "./context/LanguageContext";
 import { LanguageButton } from "./components/LanguageButton";
-import { DarkMode } from "./components/DarkMode";
 import { BackgroundGalaxy } from "./components/background/BackgroundGalaxy";
 
 function App() {
@@ -24,25 +23,28 @@ function App() {
 
   return (
     <BackgroundGalaxy>
-      {/* <section className="relative flex h-full w-full max-w-sm flex-col"> */}
-      <Header />
-      <ProfileHeader />
-      <SocialMedia />
+      <div className="flex min-h-screen flex-col md:flex-row md:gap-8 lg:gap-36">
+        <aside className="shrink-0 md:flex md:w-1/2 md:flex-col md:justify-center md:gap-14 lg:w-1/3">
+          <div className="">
+            <Header />
+            <ProfileHeader />
+          </div>
+          <SocialMedia />
+          <Navbar />
+        </aside>
 
-      <LanguageButton handleClick={handleLanguage} language={language} />
-      <Navbar />
+        <LanguageButton handleClick={handleLanguage} language={language} />
 
-      <section className="relative overflow-hidden">
-        <Routes>
-          <Route path="/" element={<AboutPage />} />
-          <Route path="skills" element={<SkillsPage />} />
-          <Route path="labs" element={<LabsPage />} />
+        <section className="relative overflow-hidden">
+          <Routes>
+            <Route path="/" element={<AboutPage />} />
+            <Route path="skills" element={<SkillsPage />} />
+            <Route path="labs" element={<LabsPage />} />
 
-          <Route path="/*" element={<Navigate to="/" />} />
-        </Routes>
-        {/* <DarkMode /> */}
-      </section>
-      {/* </section> */}
+            <Route path="/*" element={<Navigate to="/" />} />
+          </Routes>
+        </section>
+      </div>
     </BackgroundGalaxy>
   );
 }

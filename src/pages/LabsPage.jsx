@@ -15,7 +15,7 @@ export const LabsPage = () => {
     <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
       <p>{intro}</p>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
         {projects.map((project, index) => (
           <LabCard
             key={project.id}
