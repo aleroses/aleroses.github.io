@@ -30,7 +30,7 @@ export const SkillsPage = () => {
               key={skill.name}
             >
               <IconComponent
-                className="h-6 w-6 transition-all duration-300"
+                className="h-6.5 w-6.5 transition-all duration-300"
                 style={{
                   color: activeIndex === index ? skill.color : "#cad5e2",
                   filter:

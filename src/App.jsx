@@ -24,7 +24,7 @@ function App() {
   return (
     <BackgroundGalaxy>
       <div className="flex h-full min-h-screen flex-col p-4 md:flex-row md:gap-20 md:p-9 md:py-12 lg:gap-22">
-        <aside className="shrink-0 md:flex md:h-full md:flex-col md:justify-between">
+        <aside className="flex shrink-0 flex-col gap-6 md:flex md:h-full md:flex-col md:justify-between">
           <div className="">
             <Header />
             <ProfileHeader />
