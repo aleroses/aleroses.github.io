@@ -1,7 +1,7 @@
-export const Experience = ({ newLang }) => {
+export const Experience = ({ experience }) => {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-      {newLang.content.aboutMeContent.experience.items.map((job, index) => (
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2">
+      {experience.items.map((job, index) => (
         <div
           key={index}
           className="group space-y-2 rounded-2xl border border-[#8892b026] bg-[#0a0f1a99] p-5 backdrop-blur-md transition-all duration-250 ease-in-out hover:border-[#00ffd5]"

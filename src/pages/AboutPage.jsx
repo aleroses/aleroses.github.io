@@ -9,17 +9,16 @@ export const AboutPage = () => {
   const { language } = useContext(LanguageContext);
 
   const newLang = en[language] || es[language];
+  const { intro, experience } = newLang.content.aboutMeContent;
 
   return (
     <div className="space-y-4 pr-1 text-left text-sm font-light">
-      {newLang.content.aboutMeContent.intro.map((item, index) => (
+      {intro.map((item, index) => (
         <p key={item}>{item}</p>
       ))}
 
-      <h3 className="text-[1rem] font-bold">
-        {newLang.content.aboutMeContent.experience.title}
-      </h3>
-      <Experience newLang={newLang} />
+      <h3 className="text-[1rem] font-bold">{experience.title}</h3>
+      <Experience experience={experience} />
     </div>
   );
 };

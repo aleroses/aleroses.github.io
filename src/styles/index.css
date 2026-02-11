@@ -204,10 +204,33 @@ body {
   animation: gradient-move 10s linear infinite;
 }
 
-/* .experience:hover {
-  box-shadow: #00ffd5;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-} */
+/* ============================= */
+/* Animated scrollbar */
+/* ============================= */
+
+/* Para Chrome, Edge y Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0ea5e9, #1e3a8a);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #38bdf8, #2563eb);
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0a0f1a transparent;
+}
 
 @keyframes gradient-move {
   0% {

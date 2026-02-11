@@ -17,11 +17,11 @@ export const ProfileHeader = () => {
   return (
     <main className="mt-4">
       <div className="flex items-center justify-center gap-2">
-        <h1 className="animated-gradient-text text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+        <h1 className="animated-gradient-text text-2xl font-bold sm:text-3xl md:text-4xl">
           Alexander Rosas
         </h1>
         <span>
-          <VscVerifiedFilled className="text-[#00ffd5] sm:text-3xl md:text-4xl lg:text-5xl" />
+          <VscVerifiedFilled className="text-[#00ffd5] sm:text-3xl" />
         </span>
       </div>
 
