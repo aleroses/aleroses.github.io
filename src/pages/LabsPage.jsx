@@ -12,7 +12,7 @@ export const LabsPage = () => {
   const { intro, projects } = newLang.content.labsContent;
 
   return (
-    <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
+    <div className="space-y-4 pr-1 text-left text-sm font-light">
       <p>{intro}</p>
 
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">

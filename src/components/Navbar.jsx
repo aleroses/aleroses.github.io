@@ -17,7 +17,7 @@ export const Navbar = () => {
   const t = (en[language] || es[language]).navbar;
 
   return (
-    <nav className="my-4 flex w-full justify-between sm:justify-around md:flex-col md:items-center">
+    <nav className="order-3 my-4 flex w-full justify-between sm:justify-around md:order-2 md:flex-col md:items-center">
       {NAV_ITEMS.map(({ to, key }) => (
         <NavLink
           key={to}

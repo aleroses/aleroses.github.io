@@ -11,7 +11,7 @@ export const AboutPage = () => {
   const newLang = en[language] || es[language];
 
   return (
-    <div className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
+    <div className="space-y-4 pr-1 text-left text-sm font-light">
       {newLang.content.aboutMeContent.intro.map((item, index) => (
         <p key={item}>{item}</p>
       ))}

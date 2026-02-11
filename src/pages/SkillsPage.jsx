@@ -17,7 +17,7 @@ export const SkillsPage = () => {
   const activeIndex = useAnimatedIcons(skills, 1000);
 
   return (
-    <section className="h-full space-y-4 overflow-y-auto pr-1 text-left text-sm font-light">
+    <section className="space-y-4 pr-1 text-left text-sm font-light">
       <p>{newLang.content.skillsContent}</p>
 
       <div className="flex flex-wrap justify-center gap-3 rounded-xl p-2">

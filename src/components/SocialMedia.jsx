@@ -5,7 +5,7 @@ import { LabLink } from "./LabLink";
 
 export const SocialMedia = () => {
   return (
-    <article className="mt-4 flex justify-center gap-6 text-[#00ffd5]">
+    <article className="order-2 mt-4 flex justify-center gap-6 text-[#00ffd5] md:order-3">
       {socialLinks.map((item) => (
         <LabLink key={item.id} {...item} />
       ))}

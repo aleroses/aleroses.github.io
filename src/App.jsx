@@ -23,8 +23,8 @@ function App() {
 
   return (
     <BackgroundGalaxy>
-      <div className="flex min-h-screen flex-col md:flex-row md:gap-8 lg:gap-36">
-        <aside className="shrink-0 md:flex md:w-1/2 md:flex-col md:justify-center md:gap-14 lg:w-1/3">
+      <div className="flex h-full min-h-screen flex-col p-4 md:flex-row md:gap-8 lg:gap-32">
+        <aside className="shrink-0 md:flex md:h-full md:flex-col md:justify-around">
           <div className="">
             <Header />
             <ProfileHeader />
@@ -35,7 +35,7 @@ function App() {
 
         <LanguageButton handleClick={handleLanguage} language={language} />
 
-        <section className="relative overflow-hidden">
+        <section className="relative min-h-0 flex-1 overflow-y-auto scroll-smooth">
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="skills" element={<SkillsPage />} />

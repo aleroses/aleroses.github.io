@@ -76,10 +76,10 @@
 
 /* ProfileHeader ------------------- */
 
-.profileHeaderMain {
+/* .profileHeaderMain {
   text-align: center;
   margin: 1rem 0 0;
-}
+} */
 
 .profileHeaderMainDiv {
   display: flex;
