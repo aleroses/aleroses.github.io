@@ -52,7 +52,37 @@
           ]
         }
       },
-      "skillsContent": "My specialty is Web Development and the ecosystem of technologies surrounding it. Below is a summary of my skills:",
+      "skillsContent": {
+        "intro": "My specialty is Web Development and the ecosystem of technologies surrounding it. Below is a summary of my skills:",
+        "categories": [
+          {
+            "title": "Core 4+",
+            "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
+          },
+          {
+            "title": "UI & Styling 3+",
+            "items": ["Tailwind", "Figma"]
+          },
+          {
+            "title": "Testing 3+",
+            "items": ["Jest", "Testing Library"]
+          },
+          {
+            "title": "Tools 5+",
+            "items": ["Git", "GitHub", "Linux", "Vim"]
+          },
+          {
+            "title": "Soft Skills",
+            "items": [
+              "Technical documentation",
+              "Code refactoring",
+              "Team communication",
+              "Process optimization"
+            ]
+          }
+        ],
+        "closure": "I focus on building accessible, performant and scalable frontend applications. I don’t just use technologies — I understand how they work under the hood."
+      },
       "labsContent": {
         "intro": "In this section, you will find a selection of projects I have worked on over several months. Each one represents a unique challenge and an opportunity to apply and expand my skills. I am constantly exploring new ideas, so feel free to check back soon to discover more.",
         "projects": [

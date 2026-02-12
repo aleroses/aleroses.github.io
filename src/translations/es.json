@@ -52,7 +52,31 @@
           ]
         }
       },
-      "skillsContent": "Mi especialidad es el Desarrollo Web y el ecosistema de tecnologías que lo rodea. A continuación, se muestra un resumen de mis habilidades:",
+      "skillsContent": {
+        "intro": "Mi especialidad es el Desarrollo Web y el ecosistema de tecnologías que lo rodea. A continuación, se muestra un resumen de mis habilidades:",
+        "categories": [
+          {
+            "title": "Núcleo 4+",
+            "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
+          },
+          {
+            "title": "IU y Estilo 3+",
+            "items": ["Tailwind", "Figma"]
+          },
+          {
+            "title": "Pruebas 3+",
+            "items": ["Jest", "Testing Library"]
+          },
+          {
+            "title": "Herramientas 5+",
+            "items": ["Git", "GitHub", "Linux", "Vim"]
+          }
+        ],
+        "closure": [
+          "Me enfoco en construir aplicaciones frontend accesibles, performantes y escalables.",
+          "No solo utilizo tecnologías — entiendo cómo funcionan internamente."
+        ]
+      },
       "labsContent": {
         "intro": "En esta sección, encontrarás una selección de proyectos en los que he trabajado a lo largo de varios meses. Cada uno representa un desafío único y una oportunidad para aplicar y expandir mis habilidades. Estoy constantemente explorando nuevas ideas, así que no dudes en volver pronto para descubrir más.",
         "projects": [

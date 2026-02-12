@@ -7,7 +7,7 @@ export const useAnimatedIcons = (skills, delay = 500) => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) =>
         // -1 = 9
-        prevIndex === skills.length - 1 ? 0 : prevIndex + 1
+        prevIndex === skills.length - 1 ? 0 : prevIndex + 1,
       );
     }, delay);
 
