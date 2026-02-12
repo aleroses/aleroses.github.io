@@ -1,4 +1,4 @@
-# 🌌 Personal Portfolio – Henry Alexander Velásquez Rosas
+# Personal Portfolio
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -9,11 +9,11 @@ Designed to showcase my experience as an Industrial Administrator expanding into
 🔗 [Live Demo](https://aleroses.github.io/)  
 📁 [Repository](https://github.com/aleroses/aleroses.github.io)
 
-![Portfolio Preview](./src/assets/photos/profile.png)
+![Portfolio Preview](./src/assets/photos/portfolio-preview.png)
 
 ---
 
-## 🚀 About the Project
+## About the Project
 
 This portfolio was built with a strong focus on:
 
@@ -27,7 +27,7 @@ The project reflects both my technical growth and my transition into software de
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **React**
 - **Vite**
@@ -39,7 +39,7 @@ The project reflects both my technical growth and my transition into software de
 
 ---
 
-## ✨ Features
+## Features
 
 - 🌍 Multi-language support (English / Spanish)
 - 🧩 Component-based architecture
@@ -49,13 +49,7 @@ The project reflects both my technical growth and my transition into software de
 
 ---
 
-## 🏗 Project Structure
-
-The application follows a modular and scalable architecture:
-
----
-
-## 📦 Installation
+## Installation
 
 Clone the repository:
 
