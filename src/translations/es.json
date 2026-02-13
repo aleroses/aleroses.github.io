@@ -70,6 +70,15 @@
           {
             "title": "Herramientas 5+",
             "items": ["Git", "GitHub", "Linux", "Vim"]
+          },
+          {
+            "title": "Habilidades blandas",
+            "items": [
+              "Documentación técnica",
+              "Refactorización de código",
+              "Comunicación en equipo",
+              "Optimización de procesos"
+            ]
           }
         ],
         "closure": [
