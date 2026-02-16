@@ -23,7 +23,7 @@ function App() {
 
   return (
     <BackgroundGalaxy>
-      <div className="flex h-full min-h-screen flex-col p-4 md:flex-row md:gap-20 md:p-9 md:py-12 lg:gap-22">
+      <div className="flex h-full min-h-screen flex-col p-4 md:flex-row md:gap-20 md:p-9 md:py-12 lg:gap-20">
         <aside className="flex shrink-0 flex-col gap-6 md:flex md:h-full md:flex-col md:justify-between">
           <div className="">
             <Header />
@@ -35,7 +35,7 @@ function App() {
 
         <LanguageButton handleClick={handleLanguage} language={language} />
 
-        <section className="relative min-h-0 flex-1 overflow-y-auto scroll-smooth">
+        <section className="relative min-h-0 flex-1 overflow-y-auto scroll-smooth md:pl-4">
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="skills" element={<SkillsPage />} />

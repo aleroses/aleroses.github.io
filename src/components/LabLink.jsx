@@ -32,7 +32,7 @@ export const LabLink = ({
         </span>
       ) : (
         <Icon
-          className="text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)] h-6.5 w-6.5 md:h-7 md:w-7"
+          className="h-6.5 w-6.5 text-(--icon-base) transition-all duration-300 group-hover:scale-110 group-hover:text-(--icon-hover) group-hover:drop-shadow-[0_0_12px_var(--icon-shadow)] md:h-7 md:w-7"
           size={22}
         />
       )}
@@ -41,3 +41,4 @@ export const LabLink = ({
 };
 
 // 📌 alt no es válido en <a> → se usa aria-label
+// psychode

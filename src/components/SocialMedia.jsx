@@ -1,5 +1,5 @@
 // import app from "../styles/App.module.css";
-import "../styles/reactIcons.css";
+// import "../styles/reactIcons.css";
 import { socialLinks } from "../data/socialLinks";
 import { LabLink } from "./LabLink";
 
