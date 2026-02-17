@@ -60,30 +60,16 @@ export const SkillsPage = () => {
                 return (
                   <div
                     key={item}
-                    // className="group flex w-fit items-center justify-center gap-2 rounded-full border border-[#8892b026] bg-[#0a0f1a99] px-3.5 py-2 backdrop-blur-md hover:shadow-[0_0_12px_var(--color)]"
                     style={{
                       "--skill-color": skill.color,
                       "--skill-base": skill.baseColor,
                       "--skill-hover": skill.hoverColor,
                       "--skill-shadow": skill.shadowColor,
                     }}
-                    className="group flex w-fit items-center justify-center gap-2 rounded-full border border-[#8892b026] bg-[#0a0f1a99] px-3.5 py-2 backdrop-blur-md transition-all duration-300 hover:border-(--skill-color) hover:shadow-[0_3px_12px_var(--skill-shadow)]"
+                    className="group flex w-fit items-center justify-center gap-2 rounded-full border border-[#8892b026] bg-[#0a0f1a99] px-3.5 py-2 backdrop-blur-md transition-all duration-300 hover:border-(--skill-color) hover:font-semibold hover:shadow-[0_3px_12px_var(--skill-shadow)]"
                   >
                     {IconComponent && (
                       <IconComponent
-                        // className="h-6.5 w-6.5 transition-all duration-500 ease-in-out group-hover:scale-110"
-                        // style={{
-                        //   color:
-                        //     activeIndex === skillIndex
-                        //       ? skill.color
-                        //       : "#cad5e2",
-                        //   filter:
-                        //     activeIndex === skillIndex
-                        //       ? `drop-shadow(0 1px 14px ${skill.color})`
-                        //       : "none",
-                        //   transition:
-                        //     "color 0.3s ease-in-out, filter 0.3s ease-in-out",
-                        // }}
                         className={`h-6.5 w-6.5 text-[#cad5e2] transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-(--skill-color) group-hover:drop-shadow-[0_0_14px_var(--skill-color)] ${activeIndex === skillIndex ? "text-(--skill-color) drop-shadow-[0_0_14px_var(--skill-color)]" : ""} `}
                       />
                     )}
