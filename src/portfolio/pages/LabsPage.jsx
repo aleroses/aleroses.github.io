@@ -10,7 +10,7 @@ export const LabsPage = () => {
 
   const newLang = en[language] || es[language];
   const { intro, projects } = newLang.content.labsContent;
-
+components
   return (
     <div className="space-y-4 pr-1 text-left text-sm font-light">
       <p>{intro}</p>
