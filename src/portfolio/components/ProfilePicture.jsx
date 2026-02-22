@@ -1,4 +1,4 @@
-import graduationPhoto from "../assets/photos/profile.png";
+import graduationPhoto from "../../assets/photos/profile.png";
 
 export const ProfilePicture = () => {
   return (

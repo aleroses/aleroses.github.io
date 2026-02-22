@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 
-import "../styles/DarkMode.css";
+// import "../styles/DarkMode.css";
 
 export const DarkMode = () => {
   const [theme, setTheme] = useState(() => {
-    return (
-      localStorage.getItem("selectedTheme") || "light"
-    );
+    return localStorage.getItem("selectedTheme") || "light";
   });
 
   useEffect(() => {
@@ -16,9 +14,7 @@ export const DarkMode = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) =>
-      prev === "dark" ? "light" : "dark"
-    );
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
   // const Icon = theme === "dark" ? FiMoon : FiSun;
@@ -26,11 +22,7 @@ export const DarkMode = () => {
   // theme === "dark" ? "Moon logo" : "Sun logo";
 
   return (
-    <button
-      className="mode-btn"
-      data-theme={theme}
-      onClick={toggleTheme}
-    >
+    <button className="mode-btn" data-theme={theme} onClick={toggleTheme}>
       <FiMoon className="logo moon-icon" />
       <FiSun className="logo sun-icon" />
     </button>

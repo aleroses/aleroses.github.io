@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import app from "../styles/App.module.css";
-import { LanguageContext } from "../context/LanguageContext";
+// import app from "../styles/App.module.css";
+import { LanguageContext } from "../../context/LanguageContext";
 import en from "/src/translations/en.json";
 import es from "/src/translations/es.json";
 

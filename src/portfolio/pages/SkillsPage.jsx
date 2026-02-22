@@ -1,9 +1,9 @@
 import { useContext, useMemo } from "react";
 
 import { LanguageContext } from "../context/LanguageContext";
-import { useAnimatedIcons } from "../hooks/useAnimatedIcons";
+import { useAnimatedIcons } from "../../hooks/useAnimatedIcons";
 
-import { skills } from "../data/skills";
+import { skills } from "../../data/skills";
 import en from "/src/translations/en.json";
 import es from "/src/translations/es.json";
 

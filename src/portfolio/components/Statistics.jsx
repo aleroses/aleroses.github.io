@@ -1,7 +1,7 @@
 import { VscMortarBoard, VscRocket } from "react-icons/vsc";
 
-import app from "../styles/App.module.css";
-import "../styles/reactIcons.css";
+// import app from "../styles/App.module.css";
+// import "../styles/reactIcons.css";
 
 export const Statistics = ({ completed, category }) => {
   const icon = {

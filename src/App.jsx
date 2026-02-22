@@ -1,18 +1,18 @@
 import { useContext } from "react";
 import { Navigate, Route, Routes } from "react-router";
 
-import { Header } from "./components/Header";
-import { ProfileHeader } from "./components/ProfileHeader";
-import { SocialMedia } from "./components/SocialMedia";
+import { Header } from "./portfolio/components/Header";
+import { ProfileHeader } from "./portfolio/components/ProfileHeader";
+import { SocialMedia } from "./portfolio/components/SocialMedia";
 
-import { AboutPage } from "./pages/AboutPage";
-import { SkillsPage } from "./pages/SkillsPage";
-import { LabsPage } from "./pages/LabsPage";
+import { AboutPage } from "./portfolio/pages/AboutPage";
+import { SkillsPage } from "./portfolio/pages/SkillsPage";
+import { LabsPage } from "./portfolio/pages/LabsPage";
 
-import { Navbar } from "./components/Navbar";
-import { LanguageContext } from "./context/LanguageContext";
-import { LanguageButton } from "./components/LanguageButton";
-import { BackgroundGalaxy } from "./components/background/BackgroundGalaxy";
+import { Navbar } from "./portfolio/components/Navbar";
+import { LanguageContext } from "./portfolio/context/LanguageContext";
+import { LanguageButton } from "./portfolio/components/LanguageButton";
+import { BackgroundGalaxy } from "./portfolio/components/background/BackgroundGalaxy";
 
 function App() {
   const { language, setLanguage } = useContext(LanguageContext);

@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router";
 
 import App from "./App.jsx";
 import "./styles/index.css";
-import { LanguageProvider } from "./context/LanguageProvider.jsx";
+import { LanguageProvider } from "./portfolio/context/LanguageProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

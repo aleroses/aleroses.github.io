@@ -6,7 +6,7 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 import en from "/src/translations/en.json";
 import es from "/src/translations/es.json";
 
-import "../styles/reactIcons.css";
+// import "../styles/reactIcons.css";
 
 export const ProfileHeader = () => {
   const { language } = useContext(LanguageContext);
