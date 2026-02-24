@@ -13,6 +13,7 @@ import { Navbar } from "./portfolio/components/Navbar";
 import { LanguageContext } from "./portfolio/context/LanguageContext";
 import { LanguageButton } from "./portfolio/components/LanguageButton";
 import { BackgroundGalaxy } from "./portfolio/components/background/BackgroundGalaxy";
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -36,13 +37,7 @@ function App() {
         <LanguageButton handleClick={handleLanguage} language={language} />
 
         <section className="relative min-h-0 flex-1 overflow-y-auto scroll-smooth md:pl-4">
-          <Routes>
-            <Route path="/" element={<AboutPage />} />
-            <Route path="skills" element={<SkillsPage />} />
-            <Route path="labs" element={<LabsPage />} />
-
-            <Route path="/*" element={<Navigate to="/" />} />
-          </Routes>
+          <AppRouter />
         </section>
       </div>
     </BackgroundGalaxy>
