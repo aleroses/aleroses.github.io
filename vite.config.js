@@ -15,9 +15,9 @@ export default defineConfig(({ mode }) => ({
     loader: "jsx",
     include: /\.(jsx|js)$/,
   }, */
-  resolve: {
-    extensions: ['.js', '.jsx', '.json'],
-  },
+  // resolve: {
+  //   extensions: ['.js', '.jsx', '.json'],
+  // },
 
   build: {
     outDir: 'dist',
