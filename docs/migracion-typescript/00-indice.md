@@ -19,13 +19,21 @@ Las notas largas, por si quieres el porqué de cada opción:
 | [03-leer-el-tsconfig.md](03-leer-el-tsconfig.md) | Ajustar el `tsconfig` a Vite |
 | [04-strict-y-allowJs.md](04-strict-y-allowJs.md) | `strict` en lo nuevo, y dejar convivir `.js` con `.ts` |
 
-## Fase 1 — ahora
+## Fase 1 — cerrada
+
+`labLinks.ts`, `skills.ts` y `socialLinks.ts` pasan el typecheck. Para repasar: [resumen-fase-1.md](resumen-fase-1.md).
+
+| Nota | Qué quedó |
+| --- | --- |
+| [05-labLinks.md](05-labLinks.md) | La forma `{ name, url }` y una lista `readonly` |
+| [06-skills.md](06-skills.md) | `"stroke"` o `"fill"`, y el icono como componente |
+
+## Fase 2 — ahora
 
 | Nota | Qué haces tú |
 | --- | --- |
-| [05-labLinks.md](05-labLinks.md) | Pasar `labLinks.js` a `.ts` y darle una forma |
-| [06-skills.md](06-skills.md) | Pasar `skills.js` a `.ts` |
-| [resumen-fase-1.md](resumen-fase-1.md) | Lo que hay que recordar al terminar |
+| [07-useAnimatedIcons.md](07-useAnimatedIcons.md) | Pasar el hook a `.ts` y decirle qué lista recibe |
+| [resumen-fase-2.md](resumen-fase-2.md) | Lo que hay que recordar al terminar |
 
 ## Cómo usarlas
 

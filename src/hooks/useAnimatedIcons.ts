@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import type { Skill } from "../data/skills";
 
-export const useAnimatedIcons = (skills, delay = 500) => {
-  const [activeIndex, setActiveIndex] = useState(-1);
+export const useAnimatedIcons = (skills: readonly Skill[], delay = 500) => {
+  const [activeIndex, setActiveIndex] = useState<number>(-1);
 
   useEffect(() => {
     const interval = setInterval(() => {

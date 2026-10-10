@@ -4,29 +4,29 @@ Lee esta página para saber en qué fase estás. El detalle de “por qué” es
 
 ## Fase 0 — preparación
 
-Cerrada. `npm run typecheck` está en verde.
+Cerrada. Se estudia: [resumen-fase-0.md](resumen-fase-0.md).
 
-Se estudia: [resumen-fase-0.md](resumen-fase-0.md).
-
-Ahí está la idea entera: el TypeScript de esta carpeta es el que vale, el typecheck y la página son dos revisiones distintas, y un archivo se migra cambiando la extensión.
+El TypeScript de esta carpeta es el que vale, el typecheck y la página son dos revisiones distintas, y un archivo se migra cambiando la extensión.
 
 ## Fase 1 — los datos
 
-Es la fase actual. Se estudia cuando termines los archivos, en [resumen-fase-1.md](resumen-fase-1.md).
+Cerrada. Se estudia: [resumen-fase-1.md](resumen-fase-1.md).
 
-Antes de tocar código, lee en este orden:
+`labLinks.ts`, `skills.ts` y `socialLinks.ts` tienen una forma con nombre y una lista que no se reordena. `"stroke"` o `"fill"` es un valor que solo puede ser una de dos palabras.
 
-1. [05-labLinks.md](05-labLinks.md)
-2. [06-skills.md](06-skills.md)
+## Fase 2 — el reloj de los iconos
 
-Vas a ponerle forma a una lista de enlaces y a una lista de habilidades: un objeto con nombre, una lista que no se reordena, un valor que solo puede ser una de dos palabras (`"stroke"` o `"fill"`), y cómo pedir el tipo a partir del dato.
+Es la fase actual. Antes de tocar código, lee [07-useAnimatedIcons.md](07-useAnimatedIcons.md). Al terminar, estudia [resumen-fase-2.md](resumen-fase-2.md).
 
-`socialLinks.js` se queda en JavaScript. Cuando `skills` se entienda, es el mismo ejercicio, no un tema nuevo.
+El hook recibe la lista de skills y cada cierto tiempo enciende el icono siguiente. Vas a decirle que esa lista es `readonly Skill[]` y que el número que guarda es un `number`. También vas a ver por qué el reloj se apaga cuando la sección deja de mostrarse.
+
+`useRef` y los clics no están en este archivo. No se estudian aquí.
 
 ## Más adelante
 
 Estas fases todavía no se estudian. Cada una tendrá su nota y su resumen cuando llegue.
 
-- Componentes que muestran estos datos (`SkillsPage`, iconos, tarjetas). Ahí el tipo sale del archivo de datos y entra a la pantalla.
-- El idioma del portafolio. `"es"` y `"en"` son la misma idea que `"stroke"` y `"fill"`: solo dos valores permitidos.
-- Las páginas y, al final, `src/main.jsx`, porque es el único archivo que escribe la extensión en el import (`./App.jsx`).
+- Fase 3: el botón de tema claro u oscuro. Ahí el estado solo puede ser `"light"` o `"dark"`, y hay un clic.
+- Fase 4: el idioma del portafolio, `"es"` o `"en"`.
+- Fase 5: los componentes que dibujan estos datos (`LabLink`, `SocialMedia`, `SkillsPage`).
+- Fase 6: las páginas y, al final, `src/main.jsx`, el único import que escribe `.jsx`.

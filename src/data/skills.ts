@@ -1,4 +1,5 @@
-import { RiReactjsLine, RiReactjsFill } from "react-icons/ri";
+import type { IconType } from "react-icons";
+import { RiReactjsFill } from "react-icons/ri";
 import { SiJest, SiTestinglibrary, SiVim, SiDebian } from "react-icons/si";
 import {
   TbBrandHtml5,
@@ -9,14 +10,26 @@ import {
   TbBrandGit,
   TbBrandGithub,
   TbBrandFigma,
-  TbBrandDebian,
 } from "react-icons/tb";
-// import {} from "@tabler/icons-react";
 
-const withAlpha = (hex, alpha = "33") => `${hex}${alpha}`;
+type Paint = "stroke" | "fill";
+
+export type Skill = {
+  icon: IconType;
+  name: string;
+  color: string;
+  baseColor: string;
+  hoverColor: string;
+  shadowColor: string;
+  stroke?: true;
+  fill?: true;
+  paint: Paint;
+};
+
+const withAlpha = (hex: string, alpha: string = "33") => `${hex}${alpha}`;
 const BASE_ICON_COLOR = "#cad5e2";
 
-export const skills = [
+export const skills: readonly Skill[] = [
   {
     icon: TbBrandHtml5,
     name: "HTML",

@@ -1,3 +1,5 @@
+import type { IconType } from "react-icons";
+
 import {
   TbBrandX,
   TbBrandGithub,
@@ -7,7 +9,16 @@ import {
   TbLink,
 } from "react-icons/tb";
 
-export const socialLinks = [
+type SocialLink = {
+  id: string;
+  url: string;
+  icon: IconType;
+  baseColor: string;
+  hoverColor: string;
+  shadowColor: string;
+};
+
+export const socialLinks: readonly SocialLink[] = [
   {
     id: "github",
     url: "https://github.com/aleroses",

@@ -1,4 +1,9 @@
-export const labLinks = [
+type LabLink = {
+  name: string;
+  url: string;
+};
+
+export const labLinks: readonly LabLink[] = [
   {
     name: "Look Movie",
     url: "https://alevroses.github.io/api__movies/",

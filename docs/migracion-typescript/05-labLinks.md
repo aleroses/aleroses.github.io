@@ -48,9 +48,7 @@ Se lee por partes:
 - `typeof labLinks` es “el tipo de la lista entera”.
 - `[number]` es “un elemento cualquiera de esa lista”. `number` aquí no significa el número 0. Significa “un índice”.
 
-Si la lista está anotada como `readonly LabLink[]`, `UnaFila` sale igual que `LabLink`. Escribiste la forma dos veces y las dos coinciden. Por eso, en este archivo, te quedas con el `type LabLink` de arriba y no dejas el `typeof` en el código. El `typeof` fue para ver que podías derivar la forma. Ya lo viste.
-
-Prueba esto en el editor y luego bórralo. No hace falta guardarlo.
+Si la lista está anotada como `readonly LabLink[]`, `UnaFila` sale igual que `LabLink`. Escribiste la forma dos veces y las dos coinciden. Por eso el archivo se queda con el `type LabLink` de arriba. La línea de `UnaFila` no se guarda.
 
 ## `as const`, y por qué no se queda
 
@@ -58,7 +56,19 @@ Si al final del arreglo escribes `as const`, TypeScript deja de pensar “`name`
 
 Eso sirve cuando el programa compara contra esa lista cerrada. Por ejemplo, un idioma que solo puede ser `"es"` o `"en"`. Aquí nadie pregunta “¿este título es exactamente Look Movie?”. Un enlace nuevo, con otro nombre, tiene que seguir siendo válido. `string` es el tamaño justo.
 
-Puedes poner `as const` un momento, poner el cursor encima de `labLinks` y mirar cómo el tipo se vuelve una lista de títulos concretos. Después lo quitas. El archivo se queda con `readonly LabLink[]`.
+El archivo se queda con `readonly LabLink[]`, sin `as const` y sin la línea de `UnaFila`.
+
+## Dónde se mira el tipo
+
+Esto no es un comando y no es la página del navegador. Es una caja flotante del editor, y es opcional. Si el archivo ya tiene `type LabLink` y `readonly LabLink[]`, la fase está hecha. No hace falta el experimento para pasar.
+
+Si quieres verlo una vez:
+
+1. Deja el mouse quieto medio segundo encima de la palabra `labLinks` en `export const labLinks`.
+2. Aparece una caja. Con el archivo bien anotado dice `readonly LabLink[]`. Eso es “mirar el tipo”.
+3. Si la caja no sale, pon el cursor de texto en esa palabra y pulsa Ctrl+K y después Ctrl+I.
+
+Para ver qué cambia `as const`, escríbelo justo antes del `;` de la lista, vuelve a posar el mouse en `labLinks`, y la caja pasa a enumerar cada título. Luego borras `as const`. Para `typeof`, escribes la línea de `UnaFila`, posas el mouse en `UnaFila`, ves que coincide con `LabLink`, y borras la línea. Nada de eso se guarda.
 
 ## Cómo saber que este archivo está listo
 
@@ -71,4 +81,4 @@ El typecheck acaba sin errores. La página se ve como antes. El archivo se llama
 
 ## En simple
 
-Cambias `.js` por `.ts`. Nombras la forma `{ name, url }`. La lista es de esa forma y no se modifica. `typeof` te enseña que el tipo podía salir del dato. `as const` aprieta demasiado los títulos, así que no se queda.
+Cambias `.js` por `.ts`. Nombras la forma `{ name, url }`. La lista es de esa forma y no se modifica. `as const` y `typeof` explican una idea; no son un paso que tenga que quedar en el archivo. El tipo se mira en una caja del editor, al dejar el mouse sobre el nombre.

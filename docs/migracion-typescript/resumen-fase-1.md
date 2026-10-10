@@ -1,6 +1,6 @@
 # Resumen para estudiar: fase 1
 
-Léelo cuando `labLinks.ts` y `skills.ts` ya pasen `npm run typecheck`. Si todavía no los migraste, haz primero las notas 05 y 06. Este resumen no reemplaza el trabajo en los archivos.
+La fase 1 está cerrada. `npm run typecheck` pasa con `labLinks.ts`, `skills.ts` y `socialLinks.ts`.
 
 ## Lo que hay que recordar
 
@@ -14,9 +14,11 @@ type LabLink = { name: string; url: string };
 
 `readonly LabLink[]` es “lista de enlaces que el programa no reordena”. El dato sigue viviendo en el archivo. La pantalla lo lee.
 
-`typeof labLinks` pregunta el tipo de la lista. `(typeof labLinks)[number]` pregunta el tipo de un elemento. Sirve para no escribir la forma dos veces. En estos dos archivos la forma escrita a mano es más clara, así que el `typeof` se probó y no se dejó en el código.
+`typeof labLinks` pregunta el tipo de la lista. `(typeof labLinks)[number]` pregunta el tipo de un elemento. Sirve para no escribir la forma dos veces. En estos archivos la forma escrita a mano es más clara, así que esa línea no está en el código.
 
-`as const` hace que TypeScript recuerde el valor exacto, no “un texto cualquiera”. En `labLinks` eso convierte cada título en parte del tipo. Nadie compara contra esa lista cerrada, así que sobra. En `skills` esconde la forma en una unión de 13 objetos. También se quita.
+`as const` hace que TypeScript recuerde el valor exacto, no “un texto cualquiera”. En `labLinks` eso convierte cada título en parte del tipo. Nadie compara contra esa lista cerrada, así que no está. En `skills` escondería la forma en una unión de 13 objetos. Tampoco está.
+
+Eso se mira en el editor: mouse quieto sobre el nombre de la lista, y sale una caja con el tipo. No es un comando. El experimento de pegar `as const` y borrarlo es opcional. Tus archivos ya están bien sin él.
 
 `"stroke" | "fill"` se lee “esta palabra o esta otra”. Un error de dedo (`"filll"`) lo marca el typecheck. La misma idea, más adelante, será `"es" | "en"`.
 
@@ -26,9 +28,9 @@ Un campo con `?` puede no estar. `stroke?: true` quiere decir “no está, o es 
 
 ## Qué quedó decidido en los archivos
 
-- `labLinks.ts`: `type LabLink` a mano y `readonly LabLink[]`. Sin `as const`.
-- `skills.ts`: `type Paint`, `type Skill`, `readonly Skill[]`, y `withAlpha` con sus parámetros en `string`. Sin `as const`.
-- `socialLinks.js` sigue en JavaScript. Es el mismo tipo de lista (icono y colores) para cuando quieras repetir el ejercicio.
+- `labLinks.ts`: `type LabLink` a mano y `readonly LabLink[]`.
+- `skills.ts`: `type Paint`, `type Skill`, `readonly Skill[]`, y `withAlpha` con sus parámetros en `string`.
+- `socialLinks.ts`: la misma idea que las skills, sin `paint`. `id` se quedó en `string`. Alcanza, porque la pantalla solo lo usa como clave.
 
 ## La comprobación
 

@@ -85,19 +85,13 @@ export const skills: readonly Skill[] = [
 
 La pantalla hoy usa el icono, el nombre y los colores. `paint`, `stroke` y `fill` están en el dato y por eso entran en la forma, aunque ningún componente los lea todavía. No los borres al migrar.
 
-## `as const` en esta lista se mira y se quita
+## `as const` no se guarda
 
-Si pones `as const` en las 13 skills, TypeScript arma una unión gigante: la skill HTML con sus colores exactos, o la skill CSS con los suyos, y así. `paint` sí queda en `"stroke" | "fill"`, que es lo que queremos, pero el resto de los campos también se vuelve cada texto concreto. Leer ese tipo en el editor no enseña la forma. La esconde.
+Si pones `as const` en las 13 skills, TypeScript arma una unión gigante: la skill HTML con sus colores exactos, o la skill CSS con los suyos, y así. `paint` sí queda en `"stroke" | "fill"`, que es lo que queremos, pero el resto de los campos también se vuelve cada texto concreto. Esa unión esconde la forma. Lo que se guarda es `readonly Skill[]`, con `Paint` e `IconType` escritos a mano.
 
-Ponlo un momento, mira el tamaño del tipo, y quítalo. Lo que se guarda es `readonly Skill[]`, con `Paint` e `IconType` escritos a mano.
+`(typeof skills)[number]` con la lista ya anotada coincide con `Skill`. Sería escribir la misma forma dos veces. Tampoco se guarda.
 
-`typeof` también puedes probarlo, como en la nota 05:
-
-```ts
-type UnaSkill = (typeof skills)[number];
-```
-
-Con la lista anotada como `readonly Skill[]`, `UnaSkill` coincide con `Skill`. Otra vez escribiste la forma dos veces. Te quedas con `Skill`.
+Verlo es opcional y se hace en el editor, no en la terminal ni en el navegador. Deja el mouse quieto medio segundo sobre la palabra `skills` de `export const skills`. La caja debe decir `readonly Skill[]`. Si no aparece, cursor en esa palabra, Ctrl+K y luego Ctrl+I. Para el experimento, pegas `as const` antes del `;`, miras otra vez la caja, y lo borras. La línea `type UnaSkill = (typeof skills)[number]` se escribe, se mira el nombre `UnaSkill`, y se borra. El archivo que queda es el de `readonly Skill[]`.
 
 ## Cómo saber que este archivo está listo
 
@@ -106,10 +100,10 @@ npm run typecheck
 npm run dev
 ```
 
-El typecheck acaba sin errores. La página de skills se ve igual: los iconos siguen apareciendo. `socialLinks.js` no se toca en esta fase.
+El typecheck acaba sin errores. La página de skills se ve igual: los iconos siguen apareciendo.
 
-Si el typecheck pasa y aun así ves imports que no se usan (`RiReactjsLine`, `TbBrandDebian`), no es un error de tipos. Esta fase dejó apagada la regla de “variable sin usar”. Puedes borrarlos porque sobran. No cambian lo que estás estudiando.
+`socialLinks` es el mismo ejercicio (icono y colores, sin `paint`). Si ya está en `socialLinks.ts` con `readonly` e `IconType`, también cuenta como hecho.
 
 ## En simple
 
-Renombras a `.ts` y no tocas el import de `SkillsPage`. Le pones tipo a `withAlpha`. `paint` solo puede ser `"stroke"` o `"fill"`. El icono es un componente (`IconType`), importado con `import type`. La lista queda como `readonly Skill[]`. `as const` se prueba para ver la unión enorme y no se deja.
+Renombras a `.ts` y no tocas el import de `SkillsPage`. Le pones tipo a `withAlpha`. `paint` solo puede ser `"stroke"` o `"fill"`. El icono es un componente (`IconType`), importado con `import type`. La lista queda como `readonly Skill[]`. `as const` no se deja en el archivo. La caja del editor, al posar el mouse en `skills`, es el único lugar donde se mira el tipo.
